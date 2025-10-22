@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1761158335.46326 "main.aux" "main.bbl" "main" 1761158395.61995 0
-  "./main-blx.bib" 1761158395.07186 345 f7f72607198a3aba219209b813f73728 ""
+["bibtex main"] 1761158335.46326 "main.aux" "main.bbl" "main" 1761161266.01033 0
+  "./main-blx.bib" 1761161265.5127 345 f7f72607198a3aba219209b813f73728 ""
   "./references.bib" 1761178614 205291 ee037c7777326e379ba806ce42f94da0 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1741388039 65510 b1f696b0241395385f422f67543c37fd ""
-  "main.aux" 1761158395.05557 16157 2e9acb9d086ae244acbdb304a0aa6bba "pdflatex"
+  "main.aux" 1761161265.49784 16157 2e9acb9d086ae244acbdb304a0aa6bba "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761158390.30178 "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" "main.pdf" "main" 1761158395.62037 0
-  "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" 1761158384.79652 40120 0330788f21d655da46a78968bed68431 ""
+["pdflatex"] 1761161260.71143 "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" "main.pdf" "main" 1761161266.01071 0
+  "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" 1761161260.51906 40120 9e361a64f9ae936286f4c4078ad28d12 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1741388039 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1741388039 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1741388039 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -339,12 +339,12 @@
   "Images/Tabla Cronologia.png" 1761178614 198342 9d67d78d6750b3e416079a25c8677d23 ""
   "Images/cavity1.png" 1761178614 135570 1c3c3c48f9b0f21a03a669604637b74b ""
   "Images/uam.png" 1761178614 153215 85e120fad0f4f334d8cc422fcc7ba156 ""
-  "main.aux" 1761158395.05557 16157 2e9acb9d086ae244acbdb304a0aa6bba "pdflatex"
+  "main.aux" 1761161265.49784 16157 2e9acb9d086ae244acbdb304a0aa6bba "pdflatex"
   "main.bbl" 1761158335.63918 67498 13311d0527c230beebacc25da4a6194d "bibtex main"
-  "main.out" 1761158395.06589 1747 8758291cc50cea98cb239501d99a1f74 "pdflatex"
-  "main.run.xml" 1761158395.07335 2681 d78b537447acdc98ce8964b30b1fcdf4 "pdflatex"
-  "main.tex" 1761158384.79652 40120 0330788f21d655da46a78968bed68431 ""
-  "main.toc" 1761158395.07346 1057 7a45e2d090f8fdef6078d758751b4a3e "pdflatex"
+  "main.out" 1761161265.50695 1747 8758291cc50cea98cb239501d99a1f74 "pdflatex"
+  "main.run.xml" 1761161265.51403 2681 d78b537447acdc98ce8964b30b1fcdf4 "pdflatex"
+  "main.tex" 1761161260.51906 40120 9e361a64f9ae936286f4c4078ad28d12 ""
+  "main.toc" 1761161265.51414 1057 7a45e2d090f8fdef6078d758751b4a3e "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"
