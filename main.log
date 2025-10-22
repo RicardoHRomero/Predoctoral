@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.10.11)  22 OCT 2025 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.10.11)  22 OCT 2025 12:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1664,8 +1664,8 @@ l.161 \clearpage
 
 ]
 
-LaTeX Info: Redefining \. on input line 205.
-LaTeX Info: Redefining \% on input line 205.
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1692,14 +1692,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Images/cavity1.png, id=154, 1251.67625pt x 467.7475pt>
 File: Images/cavity1.png Graphic file (type png)
 <use Images/cavity1.png>
-Package pdftex.def Info: Images/cavity1.png  used on input line 233.
+Package pdftex.def Info: Images/cavity1.png  used on input line 235.
 (pdftex.def)             Requested size: 384.68576pt x 143.75119pt.
 
 
-LaTeX Info: Redefining \. on input line 251.
-LaTeX Info: Redefining \% on input line 251.
-LaTeX Info: Redefining \. on input line 251.
-LaTeX Info: Redefining \% on input line 251.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1713,15 +1713,15 @@ LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
 
-LaTeX Info: Redefining \. on input line 279.
-LaTeX Info: Redefining \% on input line 279.
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1731,8 +1731,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 
-LaTeX Info: Redefining \. on input line 296.
-LaTeX Info: Redefining \% on input line 296.
+LaTeX Info: Redefining \. on input line 298.
+LaTeX Info: Redefining \% on input line 298.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1744,8 +1744,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
+LaTeX Info: Redefining \. on input line 338.
+LaTeX Info: Redefining \% on input line 338.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1755,8 +1755,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
-LaTeX Info: Redefining \. on input line 374.
-LaTeX Info: Redefining \% on input line 374.
+LaTeX Info: Redefining \. on input line 376.
+LaTeX Info: Redefining \% on input line 376.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1768,12 +1768,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Images/Tabla Cronologia.png, id=262, 1211.52625pt x 992.70876pt>
 File: Images/Tabla Cronologia.png Graphic file (type png)
 <use Images/Tabla Cronologia.png>
-Package pdftex.def Info: Images/Tabla Cronologia.png  used on input line 387.
+Package pdftex.def Info: Images/Tabla Cronologia.png  used on input line 389.
 (pdftex.def)             Requested size: 427.43153pt x 350.22527pt.
 
 
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1783,8 +1783,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10 <./Images/Tabla Cronologia.png>]
 
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1794,8 +1794,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1804,19 +1804,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [12]
-Overfull \hbox (0.96338pt too wide) in paragraph at lines 481--481
+Overfull \hbox (0.96338pt too wide) in paragraph at lines 483--483
 []\T1/ptm/m/n/12 P. Kir-ton y J. Kee-ling, Sup-pres-sing and Res-to-ring the Dic-ke Su-per-ra-dian-ce Transition
  []
 
 
-Overfull \hbox (2.85512pt too wide) in paragraph at lines 481--481
+Overfull \hbox (2.85512pt too wide) in paragraph at lines 483--483
 []\T1/ptm/m/n/12 K. Bau-mann, C. Guer-lin, F. Bren-nec-ke y T. Ess-lin-ger, Dic-ke quan-tum pha-se transition
  []
 
 
 
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1826,8 +1826,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
+LaTeX Info: Redefining \. on input line 487.
+LaTeX Info: Redefining \% on input line 487.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -1862,13 +1862,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  47737 strings out of 473190
  970780 string characters out of 5704334
- 1813254 words of memory out of 5000000
+ 1814254 words of memory out of 5000000
  70023 multiletter control sequences out of 15000+600000
  606487 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,107p,1916b,1976s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 530342 bytes).
+Output written on main.pdf (15 pages, 530642 bytes).
 PDF statistics:
  436 PDF objects out of 1000 (max. 8388607)
  385 compressed objects within 4 object streams

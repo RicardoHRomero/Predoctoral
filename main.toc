@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Modelos de interacción espín-bosón}{2}{subsection.1.1}%
 \contentsline {section}{\numberline {2}Objetivos}{5}{section.2}%
-\contentsline {section}{\numberline {3}Metodología}{5}{section.3}%
+\contentsline {section}{\numberline {3}Metodología}{6}{section.3}%
 \contentsline {section}{\numberline {4}Resultados Esperados}{6}{section.4}%
 \contentsline {section}{\numberline {5}Avances}{6}{section.5}%
 \contentsline {section}{\numberline {6}Bibliografía}{6}{section.6}%
