@@ -178,7 +178,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Prueba 3
+
 
 En las últimas décadas, los sistemas de interacción luz-materia se han convertido en un área central en la física~\cite{haroche2006} CITAR. El desarrollo de plataformas experimentales como cavidades y circuitos en electrodinámica cuántica (\textit{Quantum Electrodynamics} o QED)~\cite{Blais2021,Clerk2020}, sistemas de átomos fríos~\cite{Mekhov2012}, trampas ópticas~\cite{Yuanjie2021} o semiconductores acoplados a microcavidades~\cite{Schneider2018}, han permitido explorar el acoplamiento controlado entre excitaciones bosónicas (fotones) y sistemas discretos de dos niveles (qubits o átomos de espin $1/2$). Más allá de su interés en óptica cuántica, estas arquitecturas  funcionan como simuladores cuánticos de fenómenos colectivos~\cite{caballero2016}.
 
@@ -262,6 +262,68 @@ Este impulso experimental ha dirigido el interés hacia extensiones más realist
 De forma paralela, la exploración de sistemas con múltiples emisores ha llevado al estudio de configuraciones novedosas como los 'átomos gigantes', donde un solo emisor se acopla a un campo en múltiples puntos espaciales, introduciendo efectos no-Markovianos como retardos e interferencias [Kockum et al., 2018]. En conjunto, estas plataformas experimentales están verificando directamente las predicciones de los modelos extendidos de Dicke, haciendo urgente el desarrollo de marcos teóricos que integren de manera coherente la disipación, la multifrecuencia y las interacciones colectivas, objetivo central de esta tesis doctoral.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sistemas abiertos y dinámica fuera del equilibrio}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Por otro lado, la física de los sistemas cuánticos abiertos y fuera del equilibrio ha adquirido una relevancia creciente en las últimas décadas, al ofrecer un marco unificado para describir fenómenos en una amplia variedad de plataformas, que van desde átomos fríos y condensados de Bose–Einstein hasta sistemas de materia condensada y óptica cuántica~\cite{rotter2015}.
+A diferencia de los sistemas cerrados, cuya evolución temporal está gobernada únicamente por un Hamiltoniano conservativo, los sistemas abiertos interactúan de manera inevitable con su entorno, lo que introduce mecanismos de disipación, ruido y pérdida de coherencia~\cite{Sieberer2016}. Esta interacción con el medio externo altera profundamente la dinámica del sistema, dando lugar a estados estacionarios que no pueden describirse mediante estados puros, sino mediante mezclas cuánticas representadas por operadores de densidad~\cite{breuer2003}.
+
+En este contexto, la energía puede tanto disiparse como inyectarse en el sistema. El bombeo coherente posibilita una transferencia de energía controlada que preserva la coherencia cuántica, mientras que el bombeo incoherente, de origen térmico o aleatorio, introduce ruido y pérdida de información. Así, los sistemas abiertos permiten estudiar cómo la coherencia y la disipación coexisten, se equilibran o incluso cooperan para dar lugar a dinámicas estacionarias fuera del equilibrio.
+
+La evolución de este tipo de sistemas no se describe mediante la ecuación de Schrödinger unitaria, sino a través de ecuaciones maestras para el operador de densidad. En particular, la ecuación de Lindblad proporciona un marco matemático consistente para incorporar procesos de disipación y bombeo (Cita[Breuer y Petruccione, 2002]). A diferencia de los sistemas cerrados, los estados estacionarios obtenidos de esta descripción no corresponden a estados térmicos, sino a configuraciones mantenidas por flujos continuos de energía y partículas entre el sistema y su entorno.
+
+De forma complementaria, el formalismo de Keldysh ofrece una poderosa formulación de campo fuera del equilibrio que permite tratar, de manera unificada, la coherencia y la disipación dentro de un mismo marco de acción efectiva (Cita[Sieberer et al., 2016]; Cita[Kirton et al., 2019]). Estas herramientas teóricas se han consolidado como esenciales para describir la competencia entre coherencia, interacción y pérdida en las plataformas experimentales contemporáneas, como cavidades ópticas, circuitos superconductores y redes fotónicas (Cita[Blais et al., 2021]).
+
+
+
+
+\ricardo{Aplicaciones}
+
+El estudio de los sistemas abiertos no es sólo una cuestión conceptual. Las plataformas experimentales actuales —circuit QED, cavidades ópticas y iones atrapados— permiten manipular y medir con alta precisión la coherencia y el entrelazamiento, lo que ha impulsado aplicaciones directas en información cuántica, metrología y simulación (Cita[Ritsch et al., 2013]; Cita[Blais et al., 2021]). La posibilidad de controlar la disipación permite estabilizar estados entrelazados robustos o generar correlaciones persistentes mediante ingeniería del entorno (Cita[Diehl et al., 2008]). Además, los sistemas fuera del equilibrio ofrecen rutas para explorar fenómenos sin análogo en equilibrio, como condensados fotónicos o fases topológicas disipativas (Cita[Mivehvar et al., 2021]). Estas características hacen de los modelos abiertos espín–bosón un terreno ideal para conectar la física fundamental con las tecnologías cuánticas emergentes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Modelo de Rabi y Dicke abierto}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Los modelos de Rabi y Dicke, pilares en la descripción de la interacción luz–materia, también han resultado esenciales para comprender el comportamiento de sistemas abiertos. Al incorporar disipación y bombeo, estas teorías trascienden su formulación original —limitada a sistemas cerrados y unitarios— y se convierten en marcos capaces de describir la dinámica real de las plataformas cuánticas contemporáneas. En particular, el modelo de Rabi abierto constituye el bloque fundamental para entender cómo la coherencia individual de un solo emisor se ve afectada, estabilizada o incluso generada por la interacción con el entorno (Cita[Beaudoin et al., 2011]; Cita[Schmidt y Koch, 2013]). Cuando este acoplamiento se extiende a muchos emisores, el modelo de Dicke abierto emerge como una herramienta central para explorar la organización colectiva y los procesos críticos en condiciones de no equilibrio.
+
+
+El modelo de Dicke abierto y fuera de equilibrio describe la interacción luz–materia incorporando disipación (pérdida de fotones y relajación atómica) y un bombeo externo (emisión de láser). El bombeo y la disipación también dan lugar a transiciones de fase de carácter dinámico~\cite{kirton2017,LeBoite2020}. Este modelo ha sido realizado experimentalmente, y fue precisamente bajo este esquema que se observó por primera vez la transición superradiante. K. Baumann et al., en 2011~\cite{Baumann11}, implementaron físicamente el modelo de Dicke abierto acoplando un condensado de Bose–Einstein (\textit{Bose–Einstein Condensate} o BEC) a un modo de cavidad óptica con pérdidas. La cavidad, al ser abierta, permitió medir en tiempo real la amplitud y la fase del campo intracavidad, revelando la ruptura espontánea de simetría durante la transición superradiante. Además, la presencia de un pequeño campo que rompe la simetría —producto de la extensión finita del BEC— influye en la selección entre las dos fases superradiantes posibles. Este sistema no solo confirmó la existencia de transiciones superradiantes, sino que también ofreció una visión directa de cómo la velocidad de cruce de la transición y las fluctuaciones cuánticas compiten con los efectos disipativos, abriendo una ventana experimental a la dinámica fuera del equilibrio en sistemas abiertos con interacción luz–materia~\cite{Baumann10}.
+
+
+Siguiendo esta línea, los sistemas optomecánicos han surgido como una plataforma experimental prometedora para explorar la dinámica fuera del equilibrio en el contexto del modelo de Dicke~\cite{debnath2015}. Estos sistemas combinan la interacción entre campos electromagnéticos y osciladores mecánicos, como espejos móviles en cavidades ópticas, lo que permite estudiar efectos como la presión de radiación y el acoplamiento entre modos ópticos y mecánicos. De manera paralela, los qubits superconductores —dispositivos cuánticos basados en circuitos superconductores que aprovechan el fenómeno de la superconductividad— constituyen otra realización física del modelo de Rabi. Estos sistemas se comportan como dos niveles efectivos, definidos por la ocupación de pares de Cooper, y ofrecen un control preciso sobre parámetros como la frecuencia de transición y el acoplamiento~\cite{Lamata2017}. Gracias a ello, se han convertido en una plataforma ideal para la exploración experimental de los modelos de Rabi y Dicke~\cite{Mezzacapo14}, y han permitido investigar la interacción de sistemas cuánticos abiertos con su entorno~\cite{hwang2018,Lo2021}.
+
+Un ejemplo paradigmático de este tipo de fenómenos es el modelo de Dicke abierto, donde la pérdida fotónica y el bombeo atómico compiten con el acoplamiento coherente luz–materia. Experimentos con condensados de Bose–Einstein en cavidades ópticas demostraron que la transición superradiante puede realizarse y mantenerse en un régimen no térmico (Cita[Baumann et al., 2010]; Cita[Klinder et al., 2015]). En circuit QED, configuraciones análogas han permitido observar dinámicas colectivas estacionarias inducidas por disipación (Cita[Le Boité et al., 2013]; Cita[Blais et al., 2021]). Estos resultados marcaron un cambio de paradigma: la disipación dejó de considerarse un mecanismo puramente destructivo para convertirse en un elemento activo capaz de generar y estabilizar el orden cuántico colectivo. En tales escenarios, la apertura del sistema introduce nuevas escalas de tiempo, modifica la criticidad e incluso da lugar a fases dinámicas emergentes, como oscilaciones coherentes sostenidas o cristales de tiempo (Cita[Minganti et al., 2018]; Cita[Mivehvar et al., 2021]; Cita[Zhu et al., 2019]).
+
+
+
+
+
+La historia de estos modelos abiertos refleja la evolución conceptual de la física cuántica moderna: desde la búsqueda de coherencia en sistemas aislados hacia la comprensión del papel creativo del entorno. El modelo de Rabi abierto representa el laboratorio teórico ideal para estudiar los mecanismos microscópicos de la decoherencia y el entrelazamiento disipativo, mientras que el modelo de Dicke abierto capta el surgimiento de fenómenos colectivos bajo condiciones fuera del equilibrio. En ambos casos, las observaciones experimentales y los desarrollos teóricos han revelado que los efectos ambientales pueden inducir autoorganización cuántica, retroalimentación colectiva y transiciones de fase dinámicas (Cita[Kirton et al., 2019]; Cita[Forn-Díaz et al., 2019]).
+
+
+Recientemente, se ha explorado el modelo de Dicke multimodo en regímenes fuera de equilibrio, mostrando comportamientos análogos a los de una memoria asociativa, como la capacidad de reconocer patrones previamente almacenados~\cite{fiorelli2020}. Estos avances conectan naturalmente los estudios iniciales con sistemas más complejos, ampliando nuestra comprensión de la dinámica colectiva en sistemas cuánticos abiertos y fuera del equilibrio.
+Más allá del marco Markoviano, los sistemas no–Markovianos amplían aún más el horizonte de la física de sistemas abiertos. En configuraciones como los llamados átomos gigantes, donde un mismo emisor se acopla al campo en varios puntos espaciales, surgen retardos y correlaciones temporales que violan la aproximación de Markov y permiten simular interacciones efectivas con memoria (Cita[Kockum et al., 2018]; Cita[Guo et al., 2020]). Estos avances han consolidado el uso del \textit{reservoir engineering} como técnica para diseñar entornos que no destruyen la coherencia, sino que la protegen o la inducen, permitiendo estabilizar estados coherentes o entrelazados (Cita[Diehl et al., 2008]; Cita[Poyatos et al., 1996]).
+
+En información cuántica, los mecanismos de \textit{reservoir engineering} se utilizan para proteger estados entrelazados frente al ruido y para estabilizar memorias cuánticas persistentes (Cita[Fiorelli et al., 2020]). En el ámbito de la simulación cuántica, los modelos de Dicke abiertos permiten emular fenómenos de materia condensada, como transiciones de fase o formación de fases coherentes impulsadas por disipación (Cita[Mivehvar et al., 2021]). Además, los sistemas multiqubit y multimodo ofrecen una plataforma natural para explorar arquitecturas híbridas de redes neuronales cuánticas, en las que la interacción entre modos del campo codifica patrones de memoria distribuidos (Cita[Marsch et al., 2021]). Estas aplicaciones muestran que la comprensión de la dinámica fuera del equilibrio no es sólo fundamental, sino estratégica para las tecnologías cuánticas emergentes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conclusión}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+El siguiente paso de esta investigación es extender los modelos de Rabi y Dicke abiertos a escenarios multiqubit y multimodo, donde los emisores interactúan simultáneamente con varios modos del campo. Esto permite estudiar la cooperación y competencia entre modos en la formación de fases superradiantes y patrones colectivosCita[Fiorelli et al., 2020]Cita[Carollo et al., 2021]), así como los efectos de correlación entre emisores, esenciales para el entrelazamiento y la autoorganización cuántica(Cita[Garraway, 2011]).
+La inclusión de disipación y multifrecuencia abre la puerta a nuevas fases estacionarias no térmicas, donde la coherencia colectiva se reorganiza bajo la influencia del entorno. La tesis propone un enfoque progresivo: iniciar con el modelo de Rabi para dos qubits, verificable numéricamente, y avanzar hacia el régimen colectivo multimodal del modelo de Dicke abierto, incorporando bombeo, disipación y efectos no–Markovianos. Este camino permitirá comprender cómo la interacción entre coherencia, disipación y multimodalidad genera nuevas formas de criticidad y autoorganización cuántica(Cita[Marsch et al., 2021]; Cita[Rotondo et al., 2015])., con implicaciones directas en el desarrollo de dispositivos cuánticos funcionales.
+
+
+
+
 \section{Objetivos}
 
 \section{Metodología}
@@ -286,8 +348,7 @@ De forma paralela, la exploración de sistemas con múltiples emisores ha llevad
 
 %Podemos extender el modelo de Dicke multimodo para sistemas experimentales a nivel teórico. Los sistemas experimentales a menudo presentan desorden~\cite{vojta2013}, ya sea en las interacciones entre átomos y fótones, en las frecuencias de los átomos o en la estructura de la cavidad~\cite{das2024}. Este desorden puede modificar drásticamente las propiedades del sistema, llevando a la aparición de nuevas fases, como los vidrios de espín~\cite{rotondo2015}. En el modelo de Dicke multimodo es, por lo tanto, un paso natural  entender como el desorden afecta las transiciones de fase.
 
-Por otro lado, la física de sistemas cuánticos abiertos y fuera de equilibrio ha adquirido gran relevancia en las últimas décadas debido a su capacidad para describir fenómenos en una amplia gama de sistemas, desde átomos fríos y condensados de Bose-Einstein hasta sistemas de  materia condensada y óptica cuántica~\cite{rotter2015}.
-Mientras que en los sistemas cerrados la evolución temporal está determinada exclusivamente por un Hamiltoniano conservativo, en los sistemas abiertos, la interacción con un entorno externo introduce efectos como la disipación, ruido y fenómenos  como la decoherencia y la relajación~\cite{Sieberer2016}. Esta conexión con el entorno modifica la dinámica del sistema, llevándolo típicamente a estados estacionarios que ya no pueden describirse como estados cuánticos puros. En lugar de ello, la descripción del sistema requiere el uso de matrices de densidad u operadores de evolución no unitarios, que capturan la dinámica fuera de equilibrio~\cite{breuer2003}.  Además de la disipación, en este marco, también se puede inyectar energía al sistema. El bombeo coherente permite la interacción con el entorno de manera controlada y reversible, manteniendo la coherencia cuántica, mientras que el bombeo incoherente, asociado a procesos aleatorios o térmicos, introduce ruido y disipación sin preservar la coherencia.
+
 
 El modelo de Dicke abierto y fuera de equilibrio describe la interacción luz-materia incorporando disipación (pérdida de fotones y relajación atómica) y un bombeo externo (emisión de laser). El bombeo y la disipación también da lugar a transiciones de fase de carácter dinámico% donde el sistema pasa de un estado normal a uno de emisión coherente e intensa de fotones, análogo a una transición de fase en equilibrio pero con una temperatura efectiva a bajas frecuencias
 ~\cite{kirton2017,LeBoite2020}. 
