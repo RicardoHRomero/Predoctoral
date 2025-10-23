@@ -276,49 +276,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{caballero2016}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=CBSF}{%
-         family={Caballero-Benitez},
-         familyi={C\bibinithyphendelim B\bibinitperiod},
-         given={Santiago\bibnamedelima F.},
-         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=MG}{%
-         family={Mazzucchi},
-         familyi={M\bibinitperiod},
-         given={Gabriel},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=MIB}{%
-         family={Mekhov},
-         familyi={M\bibinitperiod},
-         given={Igor\bibnamedelima B.},
-         giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{CBSF+1}
-    \strng{fullhash}{CBSFMGMIB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.93.063632
-    \endverb
-    \field{issue}{6}
-    \field{pages}{063632}
-    \field{title}{Quantum simulators based on the global collective light-matter interaction}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.93.063632
-    \endverb
-    \field{volume}{93}
-    \field{journaltitle}{Phys. Rev. A}
-    \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{rabi1936}{article}{}{}
     \name{author}{1}{}{%
       {{hash=RII}{%
