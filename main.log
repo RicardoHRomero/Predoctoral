@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.10.11)  22 OCT 2025 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.10.11)  23 OCT 2025 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1420,6 +1420,21 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Sieberer2016':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Halati2020':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'subasi2012':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'rabi1936':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1461,11 +1476,6 @@ Package biblatex Warning: BibTeX reported the following issues
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'rotter2015':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Sieberer2016':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1671,7 +1681,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 {/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-<Images/cavity1.png, id=150, 1251.67625pt x 467.7475pt>
+<Images/cavity1.png, id=163, 1251.67625pt x 467.7475pt>
 File: Images/cavity1.png Graphic file (type png)
 <use Images/cavity1.png>
 Package pdftex.def Info: Images/cavity1.png  used on input line 234.
@@ -1788,7 +1798,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-<Images/Tabla Cronologia.png, id=293, 1211.52625pt x 992.70876pt>
+<Images/Tabla Cronologia.png, id=307, 1211.52625pt x 992.70876pt>
 File: Images/Tabla Cronologia.png Graphic file (type png)
 <use Images/Tabla Cronologia.png>
 Package pdftex.def Info: Images/Tabla Cronologia.png  used on input line 440.
@@ -1816,11 +1826,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [13]
-Overfull \hbox (0.96338pt too wide) in paragraph at lines 534--534
-[]\T1/ptm/m/n/12 P. Kir-ton y J. Kee-ling, Sup-pres-sing and Res-to-ring the Dic-ke Su-per-ra-dian-ce Transition
- []
-
-
 
 LaTeX Info: Redefining \. on input line 534.
 LaTeX Info: Redefining \% on input line 534.
@@ -1832,6 +1837,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [14]
+Overfull \hbox (0.96338pt too wide) in paragraph at lines 534--534
+[]\T1/ptm/m/n/12 P. Kir-ton y J. Kee-ling, Sup-pres-sing and Res-to-ring the Dic-ke Su-per-ra-dian-ce Transition
+ []
+
+
 Overfull \hbox (2.85512pt too wide) in paragraph at lines 534--534
 []\T1/ptm/m/n/12 K. Bau-mann, C. Guer-lin, F. Bren-nec-ke y T. Ess-lin-ger, Dic-ke quan-tum pha-se transition
  []
@@ -1883,18 +1893,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47741 strings out of 473190
- 970696 string characters out of 5704334
- 1813189 words of memory out of 5000000
- 70023 multiletter control sequences out of 15000+600000
+ 47785 strings out of 473190
+ 972346 string characters out of 5704334
+ 1813677 words of memory out of 5000000
+ 70059 multiletter control sequences out of 15000+600000
  606487 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,107p,1916b,1976s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (17 pages, 537998 bytes).
+Output written on main.pdf (17 pages, 540195 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 109 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
