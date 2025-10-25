@@ -5,14 +5,16 @@
 \contentsline {subsection}{\numberline {1.3}Modelo de Rabi y Dicke abierto}{6}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Conclusión}{7}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Objetivos}{7}{section.2}%
-\contentsline {section}{\numberline {3}Metodología}{7}{section.3}%
-\contentsline {section}{\numberline {4}Resultados Esperados}{7}{section.4}%
-\contentsline {section}{\numberline {5}Avances}{7}{section.5}%
-\contentsline {section}{\numberline {6}Bibliografía}{7}{section.6}%
-\contentsline {section}{\numberline {7}Calendario}{7}{section.7}%
-\contentsline {section}{\numberline {8}Introducción}{8}{section.8}%
-\contentsline {section}{\numberline {9}Objetivos}{9}{section.9}%
-\contentsline {section}{\numberline {10}Metodología y/o Desarrollo del Tema}{9}{section.10}%
-\contentsline {section}{\numberline {11}Resultados Esperados}{10}{section.11}%
-\contentsline {section}{\numberline {12}Cronología}{10}{section.12}%
-\contentsline {section}{\numberline {13}Bibliografía}{11}{section.13}%
+\contentsline {section}{\numberline {3}Metodología}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modelo de Rabi de dos qubits con interacciones materiales}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Átomos Gigantes con modos multimodo}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Resultados Esperados}{9}{section.4}%
+\contentsline {section}{\numberline {5}Avances}{9}{section.5}%
+\contentsline {section}{\numberline {6}Bibliografía}{9}{section.6}%
+\contentsline {section}{\numberline {7}Calendario}{14}{section.7}%
+\contentsline {section}{\numberline {8}Introducción}{15}{section.8}%
+\contentsline {section}{\numberline {9}Objetivos}{16}{section.9}%
+\contentsline {section}{\numberline {10}Metodología y/o Desarrollo del Tema}{16}{section.10}%
+\contentsline {section}{\numberline {11}Resultados Esperados}{17}{section.11}%
+\contentsline {section}{\numberline {12}Cronología}{17}{section.12}%
+\contentsline {section}{\numberline {13}Bibliografía}{18}{section.13}%
