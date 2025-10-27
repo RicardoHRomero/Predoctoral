@@ -683,6 +683,20 @@ INPUT ./Images/cavity1.png
 INPUT ./Images/cavity1.png
 INPUT ./Images/cavity1.png
 INPUT ./Images/cavity1.png
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT ./Images/Tabla Cronologia.png
 INPUT ./Images/Tabla Cronologia.png
 INPUT ./Images/Tabla Cronologia.png
@@ -694,11 +708,16 @@ INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
+INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb

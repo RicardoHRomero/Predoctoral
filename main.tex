@@ -195,78 +195,65 @@ Es en este marco conceptual modelos de spin-bosón como Rabi y Dicke adquieren r
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-El análisis de la interacción entre la radiación y un sistema de dos niveles (spín-bosón) tiene su origen en el modelo de Rabi, formulado para describir el acoplamiento coherente entre un solo átomo y un modo del campo electromagnético~\cite{rabi1936}. Su Hamiltoniano,
+El estudio de la interacción entre la radiación y sistemas de dos niveles (espín–bosón) tiene su origen en el modelo de Rabi, propuesto para describir el acoplamiento coherente entre un átomo y un modo del campo electromagnético~\cite{rabi1936}. Su Hamiltoniano,
 
 \begin{gather}\label{Hamiltoniano de Rabi}
     \hat{H}_{\text{Rabi}} = \omega\hat{a}^{\dagger}\hat{a} + \frac{\omega_{0}}{2}\hat{\sigma}_{z} + g\left( \hat{\sigma}_{+} + \hat{\sigma}_{-} \right)\left( \hat{a}^{\dagger} + \hat{a} \right),
 \end{gather}
 
-describe la energía del campo (frecuencia $\omega$) y del átomo (frecuencia $\omega_{0}$) mediante los dos primeros términos, $g$ es el acomplamiento entre el campo y el átomo y $(\hat{\sigma}_{-}\hat{a} + \hat{\sigma}_{+}\hat{a}^{\dagger})$ conocido como termino ``rotante'' describe procesos que conservan el número total de excitaciones. Por ejemplo, $\hat{\sigma}_{+}\hat{a}$ corresponde a la emisión de un fotón $\hat{a}$ mientras el átomo se excita $\hat{\sigma}_{+}$ y viceversa con el término $\hat{\sigma}_{-}\hat{a}$. El modelo de Jaynes-Cummings~\cite{Jaynes1963}, se obtiene bajo la aproximación de onda rotante (RWA) que desprecia los términos $(\hat{\sigma}_{-}\hat{a} + \hat{\sigma}_{+}\hat{a}^{\dagger})$. Este término  ``contra-rotante'' no conserva el número de excitaciones: $\hat{\sigma}_{+}\hat{a}^{\dagger}$ crea simultaneamente una excitación atómica y un fotón, mientras $\hat{\sigma}_{-}\hat{a}$ aniquila ambas. La RWA es válida en el régimen de acoplamiento débil $(g<<\omega,\omega_{0})$. Bajo esta aproximación, el modelo de Jaynes-Cummings permite una solución exacta y estableció las bases de las cavidad QED al describir el intercambio coherente y periódico de una excitación~\cite{wallraff2004,Schoelkopf2008,devoret2013}.
+describe la energía del campo (frecuencia $\omega$) y del átomo (frecuencia $\omega_{0}$). El parámetro $g$ caracteriza el acoplamiento entre ambos, mientras que los términos rotantes $(\hat{\sigma}_{-}\hat{a} + \hat{\sigma}_{+}\hat{a}^{\dagger})$ representan procesos que conservan el número de excitaciones: la emisión o absorción de un fotón acompañada de la desexcitación o excitación atómica.
 
-Sin embargo, el progreso experimental ha permitido alcanzar regímenes de acoplamiento ultrastrong $(g/\omega \gtrsim 0.1)$ y deep strong $(g/\omega \gtrsim 1)$ donde la RWA deja de ser válida~\cite{FornDiaz2019,Yoshihara2017}. En estos regímenes, es necesario recurrir al modelo de Rabi completo, es decir, considerando los términos contra-rotantes.
+El modelo de Jaynes–Cummings~\cite{Jaynes1963} se obtiene aplicando la aproximación de onda rotante (RWA), que descarta los términos contra–rotantes $(\hat{\sigma}_{+}\hat{a}^{\dagger} + \hat{\sigma}_{-}\hat{a})$ válidos sólo en el régimen de acoplamiento débil $(g \ll \omega,\omega_{0})$. Esta aproximación permitió una descripción analítica del intercambio coherente de energía entre el átomo y el campo~\cite{wallraff2004,Schoelkopf2008,devoret2013}. Sin embargo, los avances experimentales han permitido acceder a los regímenes ultrastrong $(g/\omega \gtrsim 0.1)$ y deep strong $(g/\omega \gtrsim 1)$, donde la RWA deja de ser válida~\cite{FornDiaz2019,Yoshihara2017}, y se requiere el modelo de Rabi completo.
 
-El punto de partida metodológico consiste en extender el modelo de Rabi Eq.~\eqref{Hamiltoniano de Rabi} al caso de dos qubits, incorporando interacciones materiales de tipo colectivo, análogas a las del modelo de Dicke con interacciones Eq.~\eqref{Hamiltoniano de Dicke con interacciones}. El Hamiltoniano correspondiente se expresa como:
-\begin{gather}\label{Hamiltoniano de Rabi dos qubits con interacciones}
-    \hat{H} = \omega \hat{a}^{\dagger}\hat{a} + \omega_{0} \hat{J}_{z} + g \hat{J}_{x} (\hat{a}^{\dagger} + \hat{a}) + \eta_{x} \hat{J}_{x}^{2} + \eta_{z} \hat{J}_{z}^{2},
+Un paso natural para extender el modelo a sistemas multiqubit consiste en analizar el caso de dos qubits acoplados colectivamente a un modo del campo, descrito por:
+
+\begin{gather}
+    \hat{H} = \omega\hat{a}^{\dagger}\hat{a} + \frac{\omega_{01}}{2}\hat{\sigma}_{z}^{1} + \frac{\omega_{02}}{2}\hat{\sigma}_{z}^{2} + \frac{g}{2}\left(\hat{\sigma}_{x}^{1}+\hat{\sigma}_{x}^{2}\right)(\hat{a}^{\dagger}+\hat{a}).
 \end{gather}
-donde los dos qubits se describen en la representación simétrica, equivalente a un sistema con espín total $J=1$.  Los términos de interacción $\eta_{z}\hat{J}_{z}^{2}$ y $\eta_{x}\hat{J}_{x}^{2}$ introducen acoplamientos de tipo Ising y XY, respectivamente. El primero favorece configuraciones donde ambos qubits se encuentran simultáneamente excitados o en el estado base, mientras que el segundo permite el intercambio coherente de excitaciones entre ellos, generando correlaciones internas de tipo dipolar.
 
-La extensión natural del modelo de Rabi a sistemas con muchos átomos dio origen al modelo de Dicke~\cite{Dicke54}, que describe la interacción colectiva entre un conjunto de $N$ átomos idénticos y un único modo del campo electromagnético en una cavidad. El Hamiltoniano del modelo de Dicke se expresa como:
-%%%
+Mediante los coeficientes de Clebsch–Gordan, los estados de los dos qubits pueden representarse en la base de espín total \( |J,M\rangle \), que se descompone en un subespacio simétrico triplete (\(J=1\)) y un singlete antisimétrico (\(J=0\)). Si las frecuencias atómicas son similares \(\omega_{01} \approx \omega_{02}\), el sistema es invariante bajo permutación y puede describirse dentro del subespacio simétrico \(J=1\). En esta representación, los operadores individuales se reemplazan por operadores colectivos \(\hat{J}_{\alpha}=\tfrac{1}{2}(\hat{\sigma}_{\alpha}^{1}+\hat{\sigma}_{\alpha}^{2})\), obteniendo el Hamiltoniano efectivo:
+
+\begin{gather}\label{Hamiltoniano de Rabi dos qubits con interacciones}
+    \hat{H} = \omega \hat{a}^{\dagger}\hat{a} + \omega_{0} \hat{J}_{z} + g \hat{J}_{x} (\hat{a}^{\dagger} + \hat{a}) + \eta_{x} \hat{J}_{x}^{2} + \eta_{z} \hat{J}_{z}^{2}.
+\end{gather}
+
+Los términos \(\eta_{z}\hat{J}_{z}^{2}\) y \(\eta_{x}\hat{J}_{x}^{2}\) introducen interacciones efectivas entre los qubits. El primero corresponde a un acoplamiento tipo Ising, que modula la energía según la alineación de los momentos atómicos; el segundo, de tipo XY, describe el intercambio coherente de excitaciones responsable de la correlación dinámica entre los emisores.
+
+La generalización a un número arbitrario de átomos lleva al modelo de Dicke~\cite{Dicke54}, que describe la interacción colectiva entre $N$ átomos idénticos y un modo del campo electromagnético:
+
 \begin{gather}
     \hat{H}_{\text{D}} = \omega\hat{a}^{\dagger}\hat{a} + \sum_{j=1}^{N}\left[ \frac{\omega_{0}}{2}\hat{\sigma}_{z}^{j} + \frac{g}{\sqrt{N}}\hat{\sigma}_{x}^{j}\left(\hat{a}^{\dagger} + \hat{a}\right) \right].
 \end{gather}
-%%%
-Los primeros dos términos representan la energía del sistema en ausencia del acoplamiento luz-materia, $\omega$ es la frecuencia de un solo modo electromagnético confinado en la cavidad óptica, $\hat{a}^{\dagger}(\hat{a})$ es el operador de creación (aniquilación), $\omega_{0}$ es la frecuencia caracteristica individual de los átomos, $\hat{\sigma}_{z}^{j}$ es la matriz de espín de Pauli  y representa la diferencia de población entre el estado base y excitado de cada átomo individual. El tercer término incluye la interacción luz-materia donde $g$ es el acoplamiento entre los átomos y los fotones,  $N$ es el número de partículas y $\hat{\sigma}_{x}^{j}$ es una matriz de Pauli que representa el acoplamiento entre los dos niveles. 
 
-Es posible aplicar la aproximación de onda larga~\cite{Dicke54}, la cual consiste en asumir que la longitud de onda del campo electromagnético  sea lo suficientemente grande como para que todos los átomos interactúen de la misma manera con él, comportándose colectivamente. Esta aproximación permite introducir los operadores de pseudospín colectivos  $\hat{J}_{\mu} = \frac{1}{2}\sum_{i=1}^{N}\hat{\sigma}_{\mu}^{i}$ (que siguen el álgebra SU(2)),  e incorporan el comportamiento colectivo del conjunto de átomos. Bajo esta consideración, el Hamiltoniano de Dicke se expresa de la siguiente forma: 
+Bajo la aproximación de onda larga~\cite{Dicke54}, todos los átomos experimentan el mismo campo, y el sistema puede describirse mediante los operadores de pseudospín colectivos \(\hat{J}_{\mu} = \frac{1}{2}\sum_{i=1}^{N}\hat{\sigma}_{\mu}^{i}\), lo que conduce a la forma compacta:
+
 \begin{gather}\label{Dicke colectivo}
     \hat{H}_{\text{D}} = \omega\hat{a}^{\dagger}\hat{a} + \omega_{0}\hat{J}_{z} + \frac{2g}{\sqrt{N}}\hat{J}_{x}\left( \hat{a}^{\dagger} + \hat{a} \right).
 \end{gather}
 
-
-El interés en este modelo  radica en que predice fenómenos críticos como transiciones de fase cuánticas (\textit{Quantum Phase Transition} o QPT), donde el sistema exhibe un cambio abrupto en las propiedades del estado base al variar los parámetros como el acoplamiento luz-materia y transiciones de fase cuántica de estados excitados (\textit{Excited State Quantum Phase Transitions} o ESQPT)~\cite{Hepp73,wang1973,hioe1973,Sachdev99,Larson17}. 
-
+Este modelo predice fenómenos críticos como las transiciones de fase cuánticas (QPT) y las transiciones de fase cuánticas de estados excitados (ESQPT)~\cite{Hepp73,wang1973,hioe1973,Sachdev99,Larson17}. Cuando el acoplamiento luz-materia supera un valor crítico, el sistema pasa de un estado normal (sin fotones) a un estado superradiante caracterizado por emisión coherente colectiva~\cite{gross1982}. El modelo de Dicke ha sido implementado experimentalmente en diversas plataformas, como circuitos superconductores~\cite{Blais04,Casanova10} y cavidades ópticas con transiciones Raman~\cite{Baden14,Nagy10}, y se ha consolidado como un marco relevante en información cuántica~\cite{Garraway2011,Kirton2018,LeBoite2020}.
 
 
 
+La inclusión de interacciones entre los átomos en el modelo de Dicke permite explorar nuevas fases y modificar los puntos críticos del sistema. En mi trabajo de maestría, estudié un modelo de Dicke anisotrópico con interacciones colectivas entre emisores, analizando su diagrama de fases y la aparición de QPT y ESQPT~\cite{Herrera2022}. Posteriormente identifiqué modos de fase y amplitud, relacionando anisotropía y criticidad en sistemas luz-materia fuertemente acoplados~\cite{herrera2024}. El Hamiltoniano correspondiente es:
 
-Cuando la interacción luz-materia alcanza un valor crítico, el sistema experimenta una transición desde un estado normal, caracterizado por la ausencia de fotones, hacia un estado superradiante. %En este último, el número de fotones y átomos excitados se vuelve comparable al número total de átomos en el sistema. 
-En este régimen, la emisión promedio de fotones es diferente de cero, manifestándose como una emisión coherente y colectiva, fenómeno conocido como superradiancia~\cite{gross1982}. El modelo de Dicke ha tenido una gran recepción en el ámbito de la información cuántica~\cite{Garraway2011,Kirton2018,LeBoite2020}, pues en los últimos años, se ha implementado experimentalmente en diversas plataformas como qubits superconductores~\cite{Blais04,Casanova10} y transiciones Raman asistidas por cavidades~\cite{Baden14,Nagy10} por mencionar algunos. 
-%%%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9
-\linewidth]{Images/cavity1.png}
-    \caption{Ilustración del modelo de Dicke. 
-A) Un conjunto de \( N \) átomos de dos niveles interactúa con un único modo de radiación electromagnética. 
-B) Un conjunto de \( N \) átomos de dos niveles interactúa con múltiples modos de radiación electromagnética, incorporando además efectos de bombeo y disipación \( \kappa \).}
-    \label{Figure Cavity}
-\end{figure}
-
-En el estudio del modelo de Dicke, la inclusión de interacciones entre los átomos permite explorar nuevos fenómenos críticos y modificaciones en la transición superradiante. En mi trabajo de maestría, investigué un modelo de Dicke anisotrópico que incorpora interacciones colectivas entre los emisores, analizando su diagrama de fases y la aparición de QPT y ESQPT. Utilizando técnicas semiclásicas, caractericé las superficies de energía y las densidades de estados, demostrando cómo estas interacciones pueden inducir nuevas fases y modificar los puntos críticos del sistema~\cite{Herrera2022}. Posteriormente, extendí este análisis, identificando modos de fase y amplitud, lo que proporciona una nueva perspectiva sobre la relación entre anisotropía y criticidad en sistemas luz-materia fuertemente acoplados~\cite{herrera2024}. El Hamiltoniano de Dicke anisotrópico con interacciones materiales es:
-%%%
 \begin{gather}\label{Hamiltoniano de Dicke con interacciones}
     \hat{H}_{\text{I}} = \omega\hat{a}^{\dagger}\hat{a} + \omega_{0}\hat{J}_{z} + \frac{\gamma}{\sqrt{N}}\left[ \hat{a}\hat{J}_{+} + \hat{a}^{\dagger}\hat{J}_{-} + \xi\left( \hat{a}\hat{J}_{-} + \hat{a}^{\dagger}\hat{J}_{+} \right)  \right] + \frac{1}{N}\sum_{i=x,y,z} \eta_{i}\hat{J}_{i}^{2}.
 \end{gather}
-%%%
-Los términos $\hat{a}\hat{J}_{+}$ y $\hat{a}^{\dagger}\hat{J}_{-}$ son los rotantes, mientras que $\hat{a}\hat{J}_{-}$ y $\hat{a}^{\dagger}\hat{J}_{+}$ los contra-rotantes. El parámetro $\xi$, conocido como término anisotrópico, modula la no conservación del número de excitaciones. Los parámetros $\eta_{i}$ representan la intensidad de la interacción colectiva entre los emisores.
 
+Los términos rotantes $(\hat{a}\hat{J}_{+}, \hat{a}^{\dagger}\hat{J}_{-})$ y contra–rotantes $(\hat{a}\hat{J}_{-}, \hat{a}^{\dagger}\hat{J}_{+})$ son modulados por el parámetro anisotrópico $\xi$, mientras que los términos $\eta_{i}$ cuantifican la interacción entre emisores.
 
-El Modelo de Dicke se ha estudiado extensamente considerando un solo modo $\omega$. %Al aplicar la aproximación de onda larga, es posible observar fenómenos críticos, como las transiciones de fase superradiantes colectivas, mencionadas previamente. 
-Sin embargo, en los últimos años, ha surgido un creciente interés en explorar sistemas más complejos, como cavidades multimodo o redes de cavidades ópticas acopladas~\cite{tolkunov2007,fiorelli2020,carollo2021}, los cuales ofrecen una descripción más realista de la interacción spín-bosón. En estos sistemas, múltiples modos del campo electromagnético interactúan con los átomos de la cavidad. El Hamiltoniano de Dicke multimodo se expresa de la siguiente forma:
+Recientemente, se han propuesto extensiones multimodo del modelo de Dicke~\cite{tolkunov2007,fiorelli2020,carollo2021}, donde múltiples modos del campo electromagnético interactúan con los átomos:
+
 \begin{gather}
         \hat{H}_{\text{Multimodo}} = \sum_{k}\left(\omega_{k}\hat{a}^{\dagger}_{k}\hat{a}_{k} + \sum_{j=1}^{N}\left[ \frac{\omega_{0}}{2}\hat{\sigma}_{z}^{j} + \sum_{k}\frac{g_{k}}{\sqrt{N}}\hat{\sigma}_{x}^{j}\left(\hat{a}^{\dagger}_{k} + \hat{a}_{k}\right) \right]\right).
 \end{gather}
-Donde $\omega_{k}$ es la frecuencia de cada modo electromagnético. Esta extensión no solo enriquece el modelo teórico, sino que también permite explorar nuevos fenómenos físicos. Entre ellos destacan la competencia entre modos en las transiciones de fase cuánticas~\cite{tolkunov2007}, la formación de estructuras análogas a los vidrios de espín~\cite{rotondo2015}, la aparición de transiciones de fase no convencionales~\cite{kipf2014} y la manifestación de desorden en el sistema~\cite{vojta2013,das2024}. Estas propiedades no son solo de interés fundamental; tienen implicaciones prácticas directas, como demostró el experimento de Brendan P. Marsch, et al.~\cite{marsch2021}, donde un modelo de Dicke multimodo con un condensado de Bose-Einstein en una cavidad óptica se utilizó para almacenar múltiples patrones, un paso crucial hacia el desarrollo de memorias cuánticas y redes neuronales cuánticas~\cite{maniscalco2006,fiorelli2020}.
 
+Estos sistemas presentan fenómenos como competencia entre modos, fases no convencionales y efectos de desorden~\cite{rotondo2015,kipf2014,vojta2013,das2024}, con implicaciones en el almacenamiento cuántico y redes neuronales cuánticas~\cite{maniscalco2006,fiorelli2020,marsch2021}.
 
+De manera paralela, la física de los llamados “átomos gigantes” ha emergido como una extensión natural de estos modelos. En ellos, un solo emisor se acopla a un campo en múltiples puntos espaciales, generando retardos, interferencias y efectos no markovianos~\cite{Andersson2019,gonzalez2021-2,cai2021,yu2025}. Su tamaño efectivo, comparable con la longitud de onda del campo, rompe la aproximación dipolar y permite fenómenos como estados ligados dentro y fuera del continuo (BIC y BOC)~\cite{gonzalez2025,guo2020}. Experimentalmente, estos sistemas se implementan en circuitos superconductores donde qubits tipo transmon se acoplan en múltiples puntos de una guía de onda~\cite{Kannan2020}.
 
-
-%Entender estos sistemas también tiene implicaciones prácticas como el diseño de memorias cuánticas~\cite{fiorelli2020}.  En el 2021, Brendan P. Marsh, et al.~\cite{marsch2021}, realizó un experimento basado en el modelo de Dicke multimodo utilizando condensados de Bose-Einstein y diferentes modos de radiación electromagnética en una cavidad óptica. %En el experimento, los átomos se colocan en una cavidad confocal, donde los modos de luz están degenerados, lo que permite una interacción colectiva entre los átomos y los fotones. 
-%Esta configuración permite almacenar múltiples patrones de memoria en la red de espines, que pueden ser recuperados mediante la dinámica de relajación del sistema. %Este trabajo es relevante hacia la realización de redes neuronales cuánticas que combinen la potencia de la computación clásica con las ventajas de los efectos cuánticos. 
-
-De forma paralela, la exploración de sistemas con múltiples átomos ha llevado al estudio de configuraciones novedosas como los ``átomos gigantes'', donde un solo átomo se acopla a un campo en múltiples puntos espaciales, introduciendo efectos no-Markovianos como retardos e interferencias~\cite{Andersson2019,gonzalez2021-2,cai2021,yu2025}.
+Los átomos gigantes constituyen un puente entre los modelos multiqubit y multimodo, donde la estructura espacial y temporal del acoplamiento genera nuevas dinámicas colectivas. Su estudio abre oportunidades para comprender efectos de memoria cuántica y explorar arquitecturas de simulación cuántica con acoplamientos no markovianos. Esta línea se alinea con el enfoque progresivo de esta tesis: analizar cómo la inclusión de grados de libertad multiqubit y multifrecuencia bosónica en sistemas espín–bosón modifica la dinámica colectiva y ofrece nuevas oportunidades para la simulación y las tecnologías cuánticas.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -275,16 +262,13 @@ De forma paralela, la exploración de sistemas con múltiples átomos ha llevado
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Por otro lado, la física de los sistemas cuánticos abiertos y fuera del equilibrio ha adquirido una relevancia creciente en las últimas décadas, al ofrecer un marco para describir fenómenos en una amplia variedad de plataformas, que van desde átomos fríos y condensados de Bose–Einstein hasta sistemas de materia condensada y óptica cuántica~\cite{rotter2015}.
-A diferencia de los sistemas cerrados, cuya evolución temporal está gobernada únicamente por un Hamiltoniano conservativo, los sistemas abiertos interactúan  con su entorno, lo que introduce mecanismos de disipación, ruido y pérdida de coherencia~\cite{Sieberer2016}. Esta interacción con el medio externo altera la dinámica del sistema, dando lugar a estados estacionarios que no pueden describirse mediante estados puros, sino mediante por operadores de densidad~\cite{breuer2003}.
+La física de sistemas cuánticos abiertos proporciona el marco teórico esencial para describir sistemas reales que interactúan con su entorno, desde átomos fríos y condensados de Bose–Einstein hasta circuitos superconductores y plataformas de óptica cuántica~\cite{rotter2015}. A diferencia de los sistemas cerrados, cuya evolución es puramente unitaria, los sistemas abiertos presentan disipación, ruido y pérdida de coherencia debido al acoplamiento con grados de libertad externos~\cite{Sieberer2016,breuer2003}.
 
-En este contexto, la energía puede tanto disiparse como inyectarse en el sistema. El bombeo coherente posibilita una transferencia de energía controlada que preserva la coherencia cuántica, mientras que el bombeo incoherente, de origen térmico o aleatorio, introduce ruido y pérdida de información~\cite{carmichael2013}. Así, los sistemas abiertos permiten estudiar cómo la coherencia y la disipación coexisten, se equilibran o incluso cooperan para dar lugar a dinámicas estacionarias fuera del equilibrio.
+En estos sistemas, el intercambio de energía con el entorno puede ser de dos tipos: el bombeo coherente, que permite transferencia controlada de energía preservando coherencia cuántica, y el bombeo incoherente, de origen térmico o aleatorio, que introduce ruido y degradación de información~\cite{carmichael2013}. Esta dualidad permite estudiar cómo coherencia y disipación compiten o cooperan para generar dinámicas estacionarias fuera del equilibrio.
 
-La evolución de este tipo de sistemas se describe a través de ecuaciones maestras para el operador de densidad. En particular, la ecuación de Lindblad proporciona un marco  para incorporar procesos de disipación y bombeo~\cite{breuer2003,Li2014,Fazio2025} . A diferencia de los sistemas cerrados, los estados estacionarios obtenidos de esta descripción no corresponden a estados térmicos, sino a configuraciones mantenidas por flujos continuos de energía y partículas entre el sistema y su entorno.
+La evolución temporal se describe mediante ecuaciones maestras para el operador densidad. La ecuación de Linblald incorpora sistemáticamente procesos de disipación y bombeo, llevando a estados estacionarios que no corresponden a estados térmicos, sino a configuraciones mantenidas por flujos continuos de energía~\cite{Li2014,Fazio2025}. Complementariamente, el formalismo de Keldysh ofrece una formulación de campo fuera del equilibrio que unifica coherencia y disipación en un marco de acción efectiva~\cite{Sieberer2016,chakraborty2018}.
 
-De forma complementaria, el formalismo de Keldysh ofrece una poderosa formulación de campo fuera del equilibrio que permite tratar, de manera unificada, la coherencia y la disipación dentro de un mismo marco de acción efectiva~\cite{Sieberer2016,chakraborty2018,Fazio2025}. Estas herramientas teóricas se han consolidado para describir la competencia entre coherencia, interacción y pérdida en las plataformas experimentales, como cavidades ópticas~\cite{torres2013}, circuitos superconductores~\cite{feigelman2000} y en condensados de polaritones~\cite{dunnet2016}.
-
-%Las plataformas experimentales actuales —circuit QED, cavidades ópticas y iones atrapados— permiten manipular y medir con alta precisión la coherencia y el entrelazamiento, lo que ha impulsado aplicaciones directas en información cuántica, metrología y simulación (Cita[Ritsch et al., 2013]; Cita[Blais et al., 2021]). La posibilidad de controlar la disipación permite estabilizar estados entrelazados robustos o generar correlaciones persistentes mediante ingeniería del entorno (Cita[Diehl et al., 2008]). Además, los sistemas fuera del equilibrio ofrecen rutas para explorar fenómenos sin análogo en equilibrio, como condensados fotónicos o fases topológicas disipativas (Cita[Mivehvar et al., 2021]). 
+Estas herramientas teóricas han sido cruciales para describir la competencia entre coherencia, interacción y pérdida en plataformas experimentales como cavidades ópticas~\cite{torres2013}, circuitos superconductores~\cite{feigelman2000} y condensados de polaritones~\cite{dunnet2016}. En el contexto de esta tesis, permiten abordar sistemáticamente los regímenes de bombeo y disipación en modelos de interacción luz-materia, desde el modelo de Rabi abierto hasta extensiones multimodo y sistemas con átomos gigantes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -292,21 +276,24 @@ De forma complementaria, el formalismo de Keldysh ofrece una poderosa formulaci�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Los modelos de Rabi y Dicke permiten estudiar la dinámica de sistemas abiertos y con disipación~\cite{henriet2014,hwang2018,zueco2019,Lyu2024,damanet2019,Grimsmo2013}. En el modelo de Rabi, en este contexto, emerge la transición de fase disipativa de segundo orden, donde el sistema alcanza un estado estacionario con un incremento significativo de excitaciones debido a la competencia entre el acoplamiento ultrastrong y la disipación~\cite{hwang2018}. Aunque el número de excitaciones crece, el sistema sigue siendo finito, lo que permite observar esta transición de manera controlada incluso en sistemas pequeños.
+Los modelos de Rabi y Dicke proporcionan el marco teórico para estudiar sistemas abiertos con disipación~\cite{henriet2014,hwang2018,zueco2019,Lyu2024,damanet2019,Grimsmo2013}. En el modelo de Rabi abierto emerge una transición de fase disipativa de segundo orden, donde la competencia entre acoplamiento ultrastrong y disipación conduce a un estado estacionario con incremento significativo de excitaciones, incluso en sistemas pequeños~\cite{hwang2018}.
 
-El modelo de Dicke abierto y fuera de equilibrio describe la interacción luz–materia incorporando disipación (pérdida de fotones y relajación atómica) y un bombeo externo (emisión de láser). El bombeo y la disipación también dan lugar a transiciones de fase de carácter dinámico~\cite{kirton2017,LeBoite2020} como oscilaciones coherentes~\cite{mivehvar2021} sostenidas o cristales de tiempo~\cite{zhu2019}.
+El modelo de Dicke abierto incorpora explícitamente disipación (pérdida de fotones y relajación atómica) y bombeo externo, dando lugar a transiciones de fase dinámicas~\cite{kirton2017,LeBoite2020} como oscilaciones coherentes sostenidas~\cite{mivehvar2021} y cristales de tiempo~\cite{zhu2019}.
 
-Este modelo ha sido realizado experimentalmente, y fue precisamente bajo este esquema que se observó por primera vez la transición superradiante. K. Baumann et al., en 2011~\cite{Baumann11}, implementaron físicamente el modelo de Dicke abierto acoplando un condensado de Bose–Einstein (\textit{Bose–Einstein Condensate} o BEC) a un modo de cavidad óptica con pérdidas. La cavidad, al ser abierta, permitió medir en tiempo real la amplitud y la fase del campo intracavidad, revelando la ruptura espontánea de simetría durante la transición superradiante. Además, la presencia de un pequeño campo que rompe la simetría —producto de la extensión finita del BEC— influye en la selección entre las dos fases superradiantes posibles. Este sistema no solo confirmó la existencia de transiciones superradiantes, sino que también ofreció una visión directa de cómo la velocidad de cruce de la transición y las fluctuaciones cuánticas compiten con los efectos disipativos, abriendo una ventana experimental a la dinámica fuera del equilibrio en sistemas abiertos con interacción luz–materia~\cite{Baumann10}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/cavity1.png}
+    \caption{Ilustración del modelo de Dicke. 
+A) \( N \) átomos de dos niveles interactúan con un único modo electromagnético. 
+B) \( N \) átomos interactúan con múltiples modos, incorporando bombeo y disipación \( \kappa \).}
+    \label{Figure Cavity}
+\end{figure}
 
+La primera observación experimental de la transición superradiante fue realizada por Baumann et al.~\cite{Baumann11} acoplando un condensado de Bose–Einstein (BEC) a una cavidad óptica abierta. Este experimento reveló la ruptura espontánea de simetría durante la transición, mostrando cómo las fluctuaciones cuánticas y efectos disipativos compiten en regímenes fuera del equilibrio~\cite{Baumann10}. Experimentos posteriores con BEC en cavidades ópticas demostraron que la transición superradiante puede mantenerse en régimen no térmico~\cite{Baumann10,Klinder15}, mientras que en circuitos QED se observaron dinámicas colectivas estacionarias inducidas por disipación~\cite{Blais2021}. Estos resultados establecieron la disipación como elemento activo para generar y estabilizar orden cuántico colectivo.
 
-Experimentos con condensados de Bose–Einstein en cavidades ópticas demostraron que la transición superradiante puede realizarse y mantenerse en un régimen no térmico~\cite{Baumann10,Klinder15}. En circuit QED, configuraciones análogas han permitido observar dinámicas colectivas estacionarias inducidas por disipación~\cite{Blais2021}. Estos resultados marcaron un cambio de paradigma: la disipación dejó de considerarse un mecanismo puramente destructivo para convertirse en un elemento activo capaz de generar y estabilizar el orden cuántico colectivo. %En tales escenarios, la apertura del sistema introduce nuevas escalas de tiempo, modifica la criticidad e incluso da lugar a fases dinámicas emergentes, como oscilaciones coherentes sostenidas o cristales de tiempo (Cita[Minganti et al., 2018]; Cita[Mivehvar et al., 2021]; Cita[Zhu et al., 2019]).
+Los sistemas optomecánicos~\cite{debnath2015} y los qubits superconductores~\cite{Lamata2017} han emergido como plataformas experimentales clave. Los primeros permiten estudiar acoplamientos entre modos ópticos y mecánicos, mientras que los segundos ofrecen control preciso sobre parámetros fundamentales, facilitando la exploración experimental de los modelos de Rabi y Dicke~\cite{Mezzacapo14} y su interacción con el entorno~\cite{hwang2018,Lo2021}.
 
-
-Los sistemas optomecánicos han surgido como una plataforma experimental  para explorar la dinámica fuera del equilibrio en el contexto del modelo de Dicke~\cite{debnath2015}. Estos sistemas combinan la interacción entre campos electromagnéticos y osciladores mecánicos, como espejos móviles en cavidades ópticas, lo que permite estudiar efectos como la presión de radiación y el acoplamiento entre modos ópticos y mecánicos. De manera paralela, los qubits superconductores —dispositivos cuánticos basados en circuitos superconductores que aprovechan el fenómeno de la superconductividad— constituyen otra realización física del modelo de Rabi. Estos sistemas se comportan como dos niveles efectivos, definidos por la ocupación de pares de Cooper, y ofrecen un control preciso sobre parámetros como la frecuencia de transición y el acoplamiento~\cite{Lamata2017}. Gracias a ello, se han convertido en una plataforma ideal para la exploración experimental de los modelos de Rabi y Dicke~\cite{Mezzacapo14}, y han permitido investigar la interacción de sistemas cuánticos abiertos con su entorno~\cite{hwang2018,Lo2021}.
-
-Recientemente, se ha explorado el modelo de Dicke multimodo en regímenes fuera de equilibrio, mostrando comportamientos análogos a los de una memoria asociativa, como la capacidad de reconocer patrones previamente almacenados~\cite{fiorelli2020}. Estos avances conectan naturalmente los estudios iniciales con sistemas más complejos, ampliando nuestra comprensión de la dinámica colectiva en sistemas cuánticos abiertos y fuera del equilibrio.
-Más allá del marco Markoviano, los sistemas no–Markovianos amplían aún más el horizonte de la física de sistemas abiertos. En configuraciones como los llamados átomos gigantes, donde un mismo emisor se acopla al campo en varios puntos espaciales, surgen retardos y correlaciones temporales que violan la aproximación de Markov y permiten simular interacciones efectivas con memoria~\cite{kockum2019,guo2020}. Estos avances han consolidado el uso del \textit{reservoir engineering} como técnica para diseñar entornos que no destruyen la coherencia, sino que la protegen o la inducen, permitiendo estabilizar estados coherentes o entrelazados~\cite{poyatos1996,Diehl2008}.
-
+Recientemente, el modelo de Dicke multimodo en regímenes fuera de equilibrio ha mostrado comportamientos análogos a memorias asociativas, con capacidad de reconocer patrones almacenados~\cite{fiorelli2020}. Más allá del régimen Markoviano, sistemas no-Markovianos como los átomos gigantes —donde un emisor se acopla al campo en múltiples puntos espaciales— introducen retardos y correlaciones temporales que permiten simular interacciones con memoria~\cite{kockum2019,guo2020}. Estas configuraciones consolidan el \textit{reservoir engineering} como técnica para diseñar entornos que protegen o inducen coherencia, estabilizando estados coherentes y entrelazados~\cite{poyatos1996,Diehl2008}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -315,7 +302,8 @@ Más allá del marco Markoviano, los sistemas no–Markovianos amplían aún má
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-En este proyecto, se pretende estudiar el modelo de Rabi y Dicke  multimodo y multiqubit en sistemas abiertos y fuera de equilibrio, buscando profundizar en la comprensión sobre el papel de la disipación, el bombeo y la competencia entre modos sobre las transiciones y coherencias cuánticas, abriendo nuevas perspectivas teóricas y aplicadas en el campo de la óptica cuántica y la información cuántica. 
+Este proyecto de investigación doctoral tiene como objetivo principal estudiar sistemáticamente los modelos de Rabi y Dicke en regímenes multimodo y multiqubit, con especial énfasis en sistemas abiertos y fuera de equilibrio. La investigación se estructura progresivamente, comenzando con el modelo de Rabi de dos qubits, sistemas de multifrecuencia bosónica como los átomos gigantes y  avanzando hacia configuraciones colectivas más complejas del modelo de Dicke  donde los efectos no-Markovianos y la estructura  extendida enriquecen sustancialmente la dinámica.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -335,34 +323,127 @@ El objetivo general de este proyecto es estudiar esquemas fuera de equilibrio en
     \item Explorar aplicaciones como la posibilidad de cristales de tiempo en el modelo de Dicke multimodo en baños no markovianos, la presencia de memoria a largo plazo y el caso de interacciones entre emisores. 
 \end{itemize}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metodología}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modelo de Rabi de dos qubits con interacciones materiales}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  
+Este estudio sistemático del modelo de Rabi de dos qubits con interacciones materiales representa un paso inicial hacia la comprensión de sistemas multiqubit. Implementamos tres aproximaciones  para elucidar cómo la adición de un segundo qubit y las interacciones materiales modifican el espectro energético y los estados del sistema.
 
-Este modelo Eq.~\eqref{Hamiltoniano de Rabi dos qubits con interacciones} constituye un primer paso para explorar la fenomenología de sistemas spin–bosón con múltiples grados de libertad materiales. El análisis se centrará en aplicar la \textit{Generalized Rotating Wave Approximation} (GRWA) con el fin de estudiar el espectro de energías en los regímenes de acoplamiento débil y ultra-fuerte, identificando cómo las interacciones materiales modifican las propiedades colectivas del estado base y excitado.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Diagonalización numérica exacta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Como referencia, empleamos diagonalización numérica directa del Hamiltoniano~\eqref{Hamiltoniano de Rabi dos qubits con interacciones}, que proporciona resultados exactos para validar nuestras aproximaciones analíticas. La elección del subespacio simétrico ($j=1$) se justifica por la invariancia del Hamiltoniano bajo permutación de qubits idénticos ($\omega_{01} \approx \omega_{02}$), confinando la dinámica al sector triplete donde los operadores colectivos $\hat{J}_{\alpha}$ capturan completamente el comportamiento del sistema.
+
+En la base producto $|\Psi\rangle = |n\rangle \otimes |j, m\rangle$ con $j=1$, los elementos de matriz son:
+
+\small{ 
+\begin{gather}
+    \langle n', m' | \hat{H} | n, m \rangle 
+    = \omega n\delta_{n',n} + \left(\omega_{0} + \eta_{z}m\right) m\delta_{m',m} 
+    + \frac{g}{2}\left( \sqrt{n+1}\delta_{n',n+1} + \sqrt{n}\delta_{n',n-1} \right) \nonumber \\
+    \times\left(\sqrt{j(j+1) - m(m+1)}\delta_{m',m+1} + \sqrt{j(j+1) - m(m-1)}\delta_{m',m-1}\right) \nonumber \\
+    +\frac{\eta_{x}}{4}\left(\sqrt{j(j+1)-m(m+1)}\sqrt{j(j+1)-(m+1)(m+2)}\delta_{m',m+2} \right. \nonumber \\
+    \left. +2\left(j(j+1) - m^{2}\right)\delta_{m',m} \right. \nonumber \\
+    \left. +\sqrt{j(j+1) - m(m-1)}\sqrt{j(j+1)-(m-1)(m-2)}\delta_{m',m-2}\right) \label{numerica two qubit}
+\end{gather}}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Aproximación adiabática}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Como primera aproximación analítica, consideramos el límite adiabático ($\omega_0 \rightarrow 0$) donde el oscilador se ajusta instantáneamente a la configuración de los qubits. La transformación $\hat{U} = \exp\left[{\beta(\hat{a}^{\dagger}-\hat{a})}\right]$ genera estados de Fock desplazados que describen el reacomodo del campo para cada configuración de qubits.
+
+Esta aproximación conserva solo acoplamientos entre estados con el mismo número de excitaciones, proporcionando una imagen física intuitiva pero limitada al ignorar efectos de tunelado cuántico.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Aproximación de la onda rotante generalizada}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+La Aproximación Generalizada de Onda Rotante (\textit{Generalized Rotating Wave Approximation} o GRWA)~\cite{irish2007,albert2011,yu2012,zhang2015,zhangyu2016,zhangyu2017} extiende el enfoque adiabático reintroduciendo consistentemente el tunelado cuántico mediante la transformación polarónica:
+
+\begin{gather}\label{transformation beta}
+    \hat{U} = \exp\left[ \beta\hat{J}_{x}(\hat{a}^{\dagger} - \hat{a}) \right],
+\end{gather}
+
+con $\beta=g/\omega$. Esta transformación captura el desplazamiento colectivo del campo electromagnético inducido por los qubits, mientras que la minimización variacional de la energía del estado fundamental incorpora autoconsistentemente los efectos de $\omega_0$.
+
+La GRWA preserva la estructura de bloques manejable de la aproximación adiabática pero incluye correcciones esenciales que permiten describir transiciones entre diferentes números de excitaciones, logrando alta precisión incluso para acoplamientos fuertes.
+
+Esta metodología progresiva —desde la aproximación adiabática simple hasta la GRWA más sofisticada, validadas contra resultados numéricos exactos— establece las bases para extender nuestro análisis a sistemas multiqubit más complejos, donde las interacciones materiales y efectos colectivos juegan roles cruciales en la formación del espectro energético.
  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Átomos Gigantes con modos multimodo}
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Átomos gigantes en guías de onda de arreglo de cavidades}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+El estudio de átomos gigantes representa una extensión natural de nuestros modelos previos hacia sistemas donde la estructura espacial extendida del emisor introduce efectos no markovianos y de interferencia. A diferencia de los emisores puntuales tradicionales, los átomos gigantes acoplan al campo electromagnético en múltiples puntos espaciales separados, lo que modifica fundamentalmente la dinámica de emisión espontánea.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Modelo básico y transformación de Fourier}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Consideramos un emisor de dos niveles acoplado a un arreglo unidimensional de cavidades, descrito por el Hamiltoniano:
+
+\[H = \delta\sigma^{+}\sigma^{-} + \omega_{0}\sum_{n}a^{\dagger}_{n}a_{n} + \xi\sum_{n}\left(a^{\dagger}_{n+1}a_{n} + a^{\dagger}_{n}a_{n+1}\right) + g_{0}\left(\sigma^{+}a_{0} + \sigma^{-}a^{\dagger}_{0}\right).\]
+
+La clave para resolver este sistema está en aprovechar la invariancia traslacional mediante la transformación de Fourier discreta $a_{k} = N^{-1/2}\sum_{n}e^{ikn}a_{n}$, que diagonaliza la guía de onda y revela la relación de dispersión $\omega_{k} = 2\xi\cos k$. Físicamente, esto significa que en lugar de pensar en cavidades individuales, trabajamos con modos extendidos que se propagan a lo largo de la guía.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Función espectral y dinámica no markoviana}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+La función espectral $J(\omega) = \frac{2g_{0}^{2}}{\sqrt{4\xi^{2}-\omega^{2}}}$ captura cómo los diferentes modos de frecuencia $\omega$ contribuyen al acoplamiento. Las singularidades en $\omega = \pm 2\xi$ (bordes de banda) indican el colapso de la aproximación markoviana. Cerca del centro de la banda, $J(\omega)$ es aproximadamente constante y recuperamos la decadencia exponencial tradicional, pero cerca de los bordes la dinámica se vuelve altamente no markoviana.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Transformada de Laplace y solución exacta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Para ir más allá de la aproximación de Weisskopf-Wigner, empleamos la transformada de Laplace que permite descomponer la solución en contribuciones de estados ligados y de scattering:
+
+\[\alpha(t) = \lim_{\epsilon\to 0}\int_{-\omega_{\max}}^{-\omega_{\min}}\frac{dy}{2\pi}\frac{J(-y)e^{iyt}}{[y+\Delta-iG(-\epsilon+iy)]\,[y+\Delta-iG(\epsilon+iy)]} + \sum_{j}r_{j}e^{-iy_{j}t}.\]
+
+El primer término representa estados de scattering dentro del continuo, mientras que el segundo corresponde a estados ligados (BOC) que persisten en el estado estacionario. Esta descomposición explica físicamente por qué parte de la excitación queda atrapada localmente alrededor del emisor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Extensión a átomos gigantes multimodo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+La generalización a átomos gigantes que se acoplan en $N_c$ posiciones introduce dependencia espacial explícita:
+
+\[\tilde{g}_k = \frac{g_0}{N_c\sqrt{N}} \frac{\sin(kdN_c/2)}{\sin(kd/2)}.\]
+
+La función espectral efectiva $J_{\text{eff}}(\omega) = J(\omega) \mathcal{G}(\omega)$ ahora presenta ceros en frecuencias específicas $\omega_m = 2\xi\cos(\pi(2m+1)/d)$, donde emergen estados ligados dentro del continuo (BIC). Estos BIC surgen de interferencia destructiva que confina fotones entre los puntos de acoplamiento.
 
 
 
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Átomos Gigantes con modos multimodo}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Modelo de Dicke multimodal con interacciones materiales}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -444,33 +525,6 @@ Finalmente, se explorará la aparición de memoria a largo plazo en sistemas de 
 
 
 \clearpage
-\section{Introducción}
-
-
-
-
-%Podemos extender el modelo de Dicke multimodo para sistemas experimentales a nivel teórico. Los sistemas experimentales a menudo presentan desorden~\cite{vojta2013}, ya sea en las interacciones entre átomos y fótones, en las frecuencias de los átomos o en la estructura de la cavidad~\cite{das2024}. Este desorden puede modificar drásticamente las propiedades del sistema, llevando a la aparición de nuevas fases, como los vidrios de espín~\cite{rotondo2015}. En el modelo de Dicke multimodo es, por lo tanto, un paso natural  entender como el desorden afecta las transiciones de fase.
-
-
-
-El modelo de Dicke abierto y fuera de equilibrio describe la interacción luz-materia incorporando disipación (pérdida de fotones y relajación atómica) y un bombeo externo (emisión de laser). El bombeo y la disipación también da lugar a transiciones de fase de carácter dinámico% donde el sistema pasa de un estado normal a uno de emisión coherente e intensa de fotones, análogo a una transición de fase en equilibrio pero con una temperatura efectiva a bajas frecuencias
-~\cite{kirton2017,LeBoite2020}. 
-
-El modelo de Dicke abierto se ha realizado experimentalmente y, de hecho, es en este esquema que se observó por primera vez la QPT superradiante. K. Baumann et al., en el 2011~\cite{Baumann11}, realizó una implementación física del modelo de Dicke abierto, donde un condensado de Bose-Einstein (\textit{Bose-Einstein Condensate} o BEC) se acopla a un modo de cavidad óptica con pérdidas. La cavidad, al ser abierta, permite medir en tiempo real la amplitud y fase del campo intracavidad, revelando la ruptura de simetría durante la transición superradiante. Además, la presencia de un pequeño campo que rompe la simetría, debido a la extensión finita del BEC, influye en la elección entre las dos fases superradiantes posibles. Este sistema no solo exhibió la existencia de transiciones superradiantes, sino que también permite estudiar cómo la velocidad de cruce de la transición y las fluctuaciones cuánticas compiten con los efectos disipativos, ofreciendo una visión directa de la dinámica fuera de equilibrio en sistemas cuánticos abiertos con interacción luz-materia~\cite{Baumann10}.
-
-Siguiendo esta línea, los sistemas optomecánicos han surgido como una plataforma experimental prometedora para explorar la dinámica fuera de equilibrio en el modelo de Dicke~\cite{debnath2015}. Estos sistemas combinan la interacción entre campos electromagnéticos y osciladores mecánicos, como espejos móviles en cavidades ópticas, lo que permite estudiar efectos como la presión de radiación y el acoplamiento entre modos ópticos y mecánicos. Además, tenemos el caso de los qubits superconductores, que son dispositivos cuánticos basados en circuitos superconductores que aprovechan el fenómeno de la superconductividad. Estos sistemas, se comportan como sistemas de dos niveles, donde los estados cuánticos están definidos por la ocupación de pares de Cooper (pares de electrones que fluyen sin resistencia en un superconductor)~\cite{Lamata2017}. Su diseño permite tener control sobre parámetros, como las frecuencias de transición y los acoplamientos, lo que los convierte en una plataforma ideal para estudiar modelos como los de Dicke y Rabi~\cite{Mezzacapo14}. 
-
-El Hamiltoniano de Rabi es el siguiente:
-\begin{gather}
-    \hat{H}_{\text{R}} = \omega\hat{a}^{\dagger}\hat{a} + \omega_{0}\hat{J}_{z} + g\hat{J}_{x}\left(\hat{a}^{\dagger} + \hat{a}\right),
-\end{gather}
-a diferencia de la Ec.~\ref{Dicke colectivo}, se tiene en cuenta un solo emisor. Los qubits superconductorestambién han demostrado ser herramientas para investigar sistemas cuánticos abiertos~\cite{hwang2018,Lo2021}.
-
-Recientemente, se ha explorado el modelo de Dicke multimodo en regímenes fuera de equilibrio, mostrando comportamientos análogos a los de una memoria asociativa, como la capacidad de reconocer patrones previamente almacenados~\cite{fiorelli2020}. Estos avances conectan naturalmente los estudios iniciales con sistemas más complejos, ampliando nuestra comprensión de la dinámica colectiva en sistemas cuánticos abiertos y fuera de equilibrio.
-
-%El modelo de Dicke al incluir una amplia fenomenología, en la mayoria de los escenarios experimentales los sistemas no están perfectamente aislados  sino que están sujetos a pérdidas de fotones y otros procesos disipativos~\cite{damanet2019}. Por lo tanto, es crucial extender el Modelo de Dicke para incluir efectos de disipación, lo que permite una descripción más realista de estos sistemas.
-
-En este proyecto, se pretende estudiar el modelo de Dicke multimodo abierto en esquemas fuera de equilibrio, con lo que se busca profundizar en la comprensión sobre el papel de la disipación, el bombeo y la competencia entre modos sobre las transiciones y coherencias cuánticas, abriendo nuevas perspectivas teóricas y aplicadas en el campo de la óptica cuántica y la información cuántica. 
 
 
 \section{Objetivos}

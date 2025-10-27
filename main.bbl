@@ -1460,33 +1460,6 @@
     \field{year}{1982}
   \endentry
 
-  \entry{Garraway2011}{article}{}{}
-    \name{author}{1}{}{%
-      {{hash=GBM}{%
-         family={Garraway},
-         familyi={G\bibinitperiod},
-         given={Barry\bibnamedelima M.},
-         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GBM1}
-    \strng{fullhash}{GBM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1098/rsta.2010.0333
-    \endverb
-    \field{number}{1939}
-    \field{pages}{1137\bibrangedash 1155}
-    \field{title}{The Dicke model in quantum optics: Dicke model revisited}
-    \verb{url}
-    \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2010.0333
-    \endverb
-    \field{volume}{369}
-    \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
-    \field{year}{2011}
-  \endentry
-
   \entry{Blais04}{article}{}{}
     \name{author}{5}{}{%
       {{hash=BA}{%
@@ -1650,6 +1623,33 @@
     \field{journaltitle}{Phys. Rev. Lett.}
     \field{month}{07}
     \field{year}{2014}
+  \endentry
+
+  \entry{Garraway2011}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=GBM}{%
+         family={Garraway},
+         familyi={G\bibinitperiod},
+         given={Barry\bibnamedelima M.},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GBM1}
+    \strng{fullhash}{GBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1098/rsta.2010.0333
+    \endverb
+    \field{number}{1939}
+    \field{pages}{1137\bibrangedash 1155}
+    \field{title}{The Dicke model in quantum optics: Dicke model revisited}
+    \verb{url}
+    \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2010.0333
+    \endverb
+    \field{volume}{369}
+    \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+    \field{year}{2011}
   \endentry
 
   \entry{Herrera2022}{article}{}{}
@@ -2003,6 +2003,43 @@
     \field{year}{2024}
   \endentry
 
+  \entry{maniscalco2006}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=MS}{%
+         family={Maniscalco},
+         familyi={M\bibinitperiod},
+         given={Sabrina},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Petruccione},
+         familyi={P\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{MSPF1}
+    \strng{fullhash}{MSPF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.73.012111
+    \endverb
+    \field{issue}{1}
+    \field{pages}{012111}
+    \field{title}{Non-Markovian dynamics of a qubit}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.73.012111
+    \endverb
+    \field{volume}{73}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{01}
+    \field{year}{2006}
+  \endentry
+
   \entry{marsch2021}{article}{}{}
     \name{author}{7}{}{%
       {{hash=MBP}{%
@@ -2068,43 +2105,6 @@
     \field{journaltitle}{Phys. Rev. X}
     \field{month}{06}
     \field{year}{2021}
-  \endentry
-
-  \entry{maniscalco2006}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=MS}{%
-         family={Maniscalco},
-         familyi={M\bibinitperiod},
-         given={Sabrina},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PF}{%
-         family={Petruccione},
-         familyi={P\bibinitperiod},
-         given={Francesco},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{MSPF1}
-    \strng{fullhash}{MSPF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.73.012111
-    \endverb
-    \field{issue}{1}
-    \field{pages}{012111}
-    \field{title}{Non-Markovian dynamics of a qubit}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.73.012111
-    \endverb
-    \field{volume}{73}
-    \field{journaltitle}{Phys. Rev. A}
-    \field{month}{01}
-    \field{year}{2006}
   \endentry
 
   \entry{Andersson2019}{article}{}{}
@@ -2280,6 +2280,198 @@
     \field{journaltitle}{Phys. Rev. A}
     \field{month}{05}
     \field{year}{2025}
+  \endentry
+
+  \entry{gonzalez2025}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=GGCA}{%
+         family={González-Gutiérrez},
+         familyi={G\bibinithyphendelim G\bibinitperiod},
+         given={Carlos\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GGCA1}
+    \strng{fullhash}{GGCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 2508.21784
+    \endverb
+    \field{title}{Non-Markovian dynamics of giant emitters beyond the Weisskopf-Wigner approximation}
+    \verb{url}
+    \verb https://arxiv.org/abs/2508.21784
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2025}
+  \endentry
+
+  \entry{guo2020}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=GL}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Lingzhen},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KAF}{%
+         family={Kockum},
+         familyi={K\bibinitperiod},
+         given={Anton\bibnamedelima Frisk},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Marquardt},
+         familyi={M\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=JG}{%
+         family={Johansson},
+         familyi={J\bibinitperiod},
+         given={G\"oran},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{GL+1}
+    \strng{fullhash}{GLKAFMFJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevResearch.2.043014
+    \endverb
+    \field{issue}{4}
+    \field{pages}{043014}
+    \field{title}{Oscillating bound states for a giant atom}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevResearch.2.043014
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Phys. Rev. Res.}
+    \field{month}{10}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Kannan2020}{article}{}{}
+    \name{author}{17}{}{%
+      {{hash=KB}{%
+         family={Kannan},
+         familyi={K\bibinitperiod},
+         given={Bharath},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RMJ}{%
+         family={Ruckriegel},
+         familyi={R\bibinitperiod},
+         given={Max\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CDL}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Daniel\bibnamedelima L},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FKA}{%
+         family={Frisk\bibnamedelima Kockum},
+         familyi={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Anton},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Braum{\"u}ller},
+         familyi={B\bibinitperiod},
+         given={Jochen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KDK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={David\bibnamedelima K},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kjaergaard},
+         familyi={K\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Krantz},
+         familyi={K\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Melville},
+         familyi={M\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NBM}{%
+         family={Niedzielski},
+         familyi={N\bibinitperiod},
+         given={Bethany\bibnamedelima M},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Veps{\"a}l{\"a}inen},
+         familyi={V\bibinitperiod},
+         given={Antti},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Winik},
+         familyi={W\bibinitperiod},
+         given={Roni},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YJL}{%
+         family={Yoder},
+         familyi={Y\bibinitperiod},
+         given={Jonilyn\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=NF}{%
+         family={Nori},
+         familyi={N\bibinitperiod},
+         given={Franco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=OTP}{%
+         family={Orlando},
+         familyi={O\bibinitperiod},
+         given={Terry\bibnamedelima P},
+         giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gustavsson},
+         familyi={G\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=OWD}{%
+         family={Oliver},
+         familyi={O\bibinitperiod},
+         given={William\bibnamedelima D},
+         giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KB+1}
+    \strng{fullhash}{KBRMJCDLFKABJKDKKMKPMANBMVAWRYJLNFOTPGSOWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7818}
+    \field{pages}{775\bibrangedash 779}
+    \field{title}{Waveguide quantum electrodynamics with superconducting artificial giant atoms}
+    \field{volume}{583}
+    \field{journaltitle}{Nature}
+    \field{month}{07}
+    \field{year}{2020}
   \endentry
 
   \entry{rotter2015}{article}{}{}
@@ -3156,55 +3348,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{guo2020}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=GL}{%
-         family={Guo},
-         familyi={G\bibinitperiod},
-         given={Lingzhen},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=KAF}{%
-         family={Kockum},
-         familyi={K\bibinitperiod},
-         given={Anton\bibnamedelima Frisk},
-         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=MF}{%
-         family={Marquardt},
-         familyi={M\bibinitperiod},
-         given={Florian},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=JG}{%
-         family={Johansson},
-         familyi={J\bibinitperiod},
-         given={G\"oran},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Physical Society}%
-    }
-    \strng{namehash}{GL+1}
-    \strng{fullhash}{GLKAFMFJG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/PhysRevResearch.2.043014
-    \endverb
-    \field{issue}{4}
-    \field{pages}{043014}
-    \field{title}{Oscillating bound states for a giant atom}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevResearch.2.043014
-    \endverb
-    \field{volume}{2}
-    \field{journaltitle}{Phys. Rev. Res.}
-    \field{month}{10}
-    \field{year}{2020}
-  \endentry
-
   \entry{poyatos1996}{article}{}{}
     \name{author}{3}{}{%
       {{hash=PJF}{%
@@ -3329,6 +3472,209 @@
     \field{journaltitle}{Phys. Rev. Lett.}
     \field{month}{10}
     \field{year}{2007}
+  \endentry
+
+  \entry{albert2011}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AVV}{%
+         family={Albert},
+         familyi={A\bibinitperiod},
+         given={Victor\bibnamedelima V.},
+         giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SGD}{%
+         family={Scholes},
+         familyi={S\bibinitperiod},
+         given={Gregory\bibnamedelima D.},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Brumer},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{AVV+1}
+    \strng{fullhash}{AVVSGDBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.84.042110
+    \endverb
+    \field{issue}{4}
+    \field{pages}{042110}
+    \field{title}{Symmetric rotating-wave approximation for the generalized single-mode spin-boson system}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.84.042110
+    \endverb
+    \field{volume}{84}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{10}
+    \field{year}{2011}
+  \endentry
+
+  \entry{yu2012}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=YL}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Lixian},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Shiqun},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LQ}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Qifeng},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Gang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Suotang},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{YL+1}
+    \strng{fullhash}{YLZSLQCGJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.86.015803
+    \endverb
+    \field{issue}{1}
+    \field{pages}{015803}
+    \field{title}{Analytical solutions for the Rabi model}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.86.015803
+    \endverb
+    \field{volume}{86}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{07}
+    \field{year}{2012}
+  \endentry
+
+  \entry{zhang2015}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZYY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yu-Yu},
+         giveni={Y\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=CQH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Qing-Hu},
+         giveni={Q\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{ZYYCQH1}
+    \strng{fullhash}{ZYYCQH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.91.013814
+    \endverb
+    \field{issue}{1}
+    \field{pages}{013814}
+    \field{title}{Generalized rotating-wave approximation for the two-qubit quantum Rabi model}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.91.013814
+    \endverb
+    \field{volume}{91}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{01}
+    \field{year}{2015}
+  \endentry
+
+  \entry{zhangyu2016}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=ZYY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yu-Yu},
+         giveni={Y\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{ZYY1}
+    \strng{fullhash}{ZYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.94.063824
+    \endverb
+    \field{issue}{6}
+    \field{pages}{063824}
+    \field{title}{Generalized squeezing rotating-wave approximation to the isotropic and anisotropic Rabi model in the ultrastrong-coupling regime}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.94.063824
+    \endverb
+    \field{volume}{94}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{12}
+    \field{year}{2016}
+  \endentry
+
+  \entry{zhangyu2017}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=ZYY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yu-Yu},
+         giveni={Y\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=CXY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Xiang-You},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{ZYYCXY1}
+    \strng{fullhash}{ZYYCXY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevA.96.063821
+    \endverb
+    \field{issue}{6}
+    \field{pages}{063821}
+    \field{title}{Analytical solutions by squeezing to the anisotropic Rabi model in the nonperturbative deep-strong-coupling regime}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevA.96.063821
+    \endverb
+    \field{volume}{96}
+    \field{journaltitle}{Phys. Rev. A}
+    \field{month}{12}
+    \field{year}{2017}
   \endentry
 
   \entry{gonzalez2021}{article}{}{}
