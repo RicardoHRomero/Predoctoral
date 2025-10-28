@@ -312,11 +312,13 @@ Este proyecto de investigación doctoral tiene como objetivo principal estudiar 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Objetivo general}
+
 El objetivo central de esta investigación doctoral es establecer un marco teórico para comprender la dinámica colectiva en sistemas cuánticos abiertos con interacción luz-materia en regímenes de acoplamiento intenso, multimodo y multiqubit. Buscamos describir cómo la competencia entre coherencia, disipación y bombeo externo genera nuevas fases cuánticas fuera del equilibrio, con relevancia tanto para la física fundamental como para el desarrollo de tecnologías cuánticas.
 
 Este objetivo se aborda progresivamente, desde modelos de baja dimensionalidad —como el de Rabi extendido con interacciones entre qubits— hasta configuraciones colectivas del modelo de Dicke abierto y multimodo. El hilo conductor será identificar los mecanismos que permiten la emergencia de orden cuántico en presencia de disipación, memoria y acoplamientos espaciales no triviales, como los presentes en sistemas con átomos gigantes.
 
-\subsection*{Objetivos específicos}
+\subsection{Objetivos específicos}
 
 \begin{itemize}
     \item Analizar el modelo de Rabi de dos qubits con interacciones materiales, Eq.~\eqref{Hamiltoniano de Rabi dos qubits con interacciones} y caracterizar como la inclusión de términos de un qubit e interacciones materiales modifican el espectro de energía. Este estudio servirá como base conceptual para entender el acoplamiento colectivo entre múltiples emisores.
@@ -497,7 +499,6 @@ Finalmente, se explorarán los efectos de memoria a largo plazo en sistemas de D
 Se espera que los resultados de esta investigación contribuyan al entendimiento del modelo de Dicke multimodo en presencia de disipación y bombeo, con énfasis en fenómenos como las transiciones de fase superradiantes, la competencia entre modos y los efectos del desorden o de las interacciones entre emisores. Asimismo, se buscará identificar nuevas fases fuera del equilibrio mediante el formalismo de Keldysh, incluyendo la posible formación de \textit{cristales de tiempo} y el desarrollo de memorias cuánticas con retención prolongada. En conjunto, estos avances ampliarán el conocimiento teórico sobre sistemas cuánticos abiertos y ofrecerán perspectivas aplicadas para el desarrollo de tecnologías cuánticas de próxima generación.
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Avances}
@@ -505,8 +506,118 @@ Se espera que los resultados de esta investigación contribuyan al entendimiento
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Modelo de Rabi de dos qubits con interacciones materiales}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Mostramos algunos resultados del espectro de energías del modelo de Rabi de dos qubits con interacciones materiales utilizando la aproximación adiabática y GRWA. 
+
+\subsubsection{Espectro energético y validación de la GRWA}
+
+La validación sistemática de nuestras aproximaciones mediante diagonalización numérica exacta ($n_{\text{max}}=30$) revela que la Aproximación Generalizada de Onda Rotante (GRWA) aproxima el espectro del sistema. Como muestra la Figura~\ref{fig: Conventional GRWA}, la GRWA captura no solo la estructura general de niveles sino también detalles finos como curvaturas y cruces de niveles que emergen en el régimen de acoplamiento fuerte ($g/\omega \gtrsim 0.5$).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Images APS v1/GRWA.pdf}
+    \caption{Espectro energético del modelo de Rabi de dos qubits. Las líneas negras sólidas representan la diagonalización numérica exacta. (a) Caso no resonante $\omega_0 = \omega/2$; (b) Caso resonante $\omega = \omega_0$; (c) Resonante con $\eta_z = 0.5$; (d) Resonante con $\eta_x = 0.5$. La GRWA (línea púrpura discontinua) muestra excelente acuerdo con los resultados exactos incluso en presencia de interacciones materiales.}
+    \label{fig: Conventional GRWA}
+\end{figure}
+
+La robustez de la aproximación se mantiene al incorporar interacciones materiales $\eta_x$ y $\eta_z$, demostrando su versatilidad para describir sistemas donde los acoplamientos qubit-qubit modifican sustancialmente la dinámica luz-materia.
+
+\subsubsection{Tratamiento variacional del estado fundamental}
+
+Desarrollamos un enfoque variacional para optimizar la descripción del estado base. Partiendo de la transformación polarónica $\hat{U} = \exp\left[ \beta\hat{J}_{x}(\hat{a}^{\dagger} - \hat{a}) \right]$ y usando GRWA obtenemos la energía del estado fundamental:
+
+\begin{gather}
+E_{\text{GRWA,GS}}^{\beta} = -\omega_{0} e^{-\frac{\beta^{2}}{2}} + \frac{1}{2}\left[ (\omega \beta -2g)\beta + \eta_{x} + \frac{\eta_{z}}{2}\left(e^{-2\beta^{2}}+3 \right) \right],
+\end{gather}
+
+donde el parámetro $\beta$ se determina variacionalmente mediante:
+
+\begin{gather}
+\beta = \frac{g}{\omega + \omega_{0} e^{-\frac{\beta^{2}}{2}} - \eta_{z} e^{-2\beta^{2}}}.
+\end{gather}
+
+Como evidencia la Figura~\ref{fig:Ground State}, este tratamiento variacional (línea azul sólida) mejora sustancialmente la precisión respecto a la elección convencional $\beta = g/\omega$ (línea púrpura discontinua).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Images APS v1/Estado Base.pdf}
+    \caption{Energía del estado fundamental. El tratamiento variacional con $\beta$ (azul sólido) y $\beta + \lambda$ (verde sólido) muestra mejora sistemática sobre aproximaciones convencionales en todos los regímenes de acoplamiento.}
+    \label{fig:Ground State}
+\end{figure}
+
+Para capturar correlaciones cuánticas adicionales, implementamos una transformación de squeezing $\hat{V} = \exp\left[{\lambda\left(\hat{a}^{2} - \hat{a}^{\dagger2}\right)}\right]$ que conduce a la expresión:
+
+\begin{gather}
+E_{\text{GRWA,GS}}^{\beta,\lambda} = \omega \sinh^{2}(2\lambda) - \omega_{0} e^{-\frac{\beta^{2}}{2} e^{-4\lambda}} + \frac{1}{2}\left[ (\omega\beta -2g)\beta + \eta_{x} + \frac{\eta_{z}}{2}\left( e^{-2\beta^{2}e^{-4\lambda}} +3 \right) \right].
+\end{gather}
+
+La optimización simultánea de ambos parámetros ($\partial E/\partial\beta = 0$, $\partial E/\partial\lambda = 0$) proporciona la descripción más precisa del estado fundamental. En el límite de acoplamiento débil, los parámetros admiten formas analíticas compactas:
+
+\begin{gather}
+\beta_{0} \simeq \frac{g}{\omega + \omega_{0}-\eta_{z}}, \qquad \lambda_{0} \simeq \frac{\omega_{0}-\eta_{z}}{2\omega} \left( \frac{g}{\omega + \omega_{0} -\eta_{z}} \right)^{2},
+\end{gather}
+
+revelando cómo las interacciones materiales modulan la compresión del campo.
+
+\subsubsection{Valor medio del número de fotones}
+
+El cálculo del número medio de fotones $\langle n \rangle = \langle a^{\dagger}a \rangle$ cuantifica el dressing del vacío inducido por el acoplamiento fuerte. Como muestra la Figura~\ref{fig:Expectation Value}, la GRWA aproxima el crecimiento de $\langle n \rangle$ con $g$, capturando tanto la tendencia cualitativa como las modificaciones introducidas por las interacciones materiales.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Images APS v1/Promedio.pdf}
+    \caption{Número medio de fotones en el estado fundamental. La GRWA captura el dressing fotónico inducido por el acoplamiento fuerte y la influencia diferenciada de las interacciones materiales.}
+    \label{fig:Expectation Value}
+\end{figure}
+
+Observamos que $\eta_z$ acopla directamente con $\hat{J}_{z}$ y modifica significativamente el desplazamiento del oscilador, $\eta_x$ (asociado a procesos spin-flip) influye principalmente en la estructura del entrelazamiento y el espectro de excitaciones, sin afectar prominentemente el desplazamiento medio del campo. Esta distinción física emerge naturalmente de nuestro tratamiento variacional y constituye un insight valioso para el diseño de sistemas cuánticos con acoplamientos controlados.
 
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reproducción analítica de dinámicas no markovianas en átomos gigantes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+He realizado una revisión y reproducción analítica de los métodos desarrollados en el artículo ``Non-Markovian dynamics of giant emitters beyond the Weisskopf-Wigner approximation''~\cite{gonzalez2025}, lo que me ha permitido dominar herramientas teóricas esenciales para el estudio de sistemas cuánticos abiertos con estructura espacial extendida.
+
+He implementado sistemáticamente el formalismo exacto basado en la transformada de Laplace para resolver la dinámica de emisores cuánticos acoplados a guías de onda estructuradas. Logré reproducir la solución exacta para la amplitud de probabilidad del estado excitado:
+
+\[\alpha(t) = \lim_{\epsilon\to 0}\int_{-\omega_{\max}}^{-\omega_{\min}}\frac{dy}{2\pi}\frac{J(-y)e^{iyt}}{[y+\Delta-iG(-\epsilon+iy)]\,[y+\Delta-iG(\epsilon+iy)]} + \sum_{j=\pm}r_{j}e^{-iy_{j}t}.\]
+
+Esta descomposición revela físicamente la coexistencia de dos tipos de estados: estados de scattering dentro del continuo que eventualmente decaen, y estados ligados fuera del continuo (BOC) que persisten indefinidamente. La validación de este formalismo me ha permitido comprender en profundidad cómo las singularidades de van Hove en la función espectral $J(\omega) = \frac{2g_{0}^{2}}{\sqrt{4\xi^{2}-\omega^{2}}}$ modifican cualitativamente la dinámica de emisión espontánea.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Caracterización de estados ligados y efectos de localización}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Un resultado clave que he verificado es la formación de estados ligados fotónicos localizados exponencialmente alrededor del emisor, con longitud de localización $\lambda_{\pm} = \cosh^{-1} (|y_{\pm}|/2\xi)$. Estos estados emergen cuando la frecuencia del emisor se sitúa cerca de los bordes de la banda fotónica, donde la aproximación markoviana deja de ser válida. 
+
+La reproducción del perfil espacial del campo radiante en el estado estacionario:
+
+\[\langle a_n^{\dagger}a_n \rangle_{\pm} = \frac{g_0^2 r_{\pm}^2}{y_{\pm}^2 - 4\xi^2} e^{-2\kappa_{\pm}|n|},\]
+
+confirma cómo la excitación queda atrapada en la vecindad del emisor, un fenómeno fundamental para el confinamiento cuántico de luz.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Extensión a átomos gigantes y emergencia de BICs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+He extendido exitosamente el formalismo al caso de átomos gigantes, donde el emisor se acopla en múltiples puntos espacialmente separados. Para el caso mínimo de $N_c=2$ puntos de acoplamiento, reproduje la modificación del acoplamiento efectivo:
+
+\[\tilde{g}_k = \frac{g_0}{N_c\sqrt{N}} \frac{\sin(kdN_c/2)}{\sin(kd/2)},\]
+
+que conduce a la función espectral efectiva $J_{\text{eff}}(\omega) = J(\omega) \mathcal{G}(\omega)$. Crucially, verifiqué la emergencia de estados ligados dentro del continuo (BIC) en frecuencias específicas $\omega_m = 2\xi\cos(\pi(2m+1)/d)$, donde la interferencia destructiva suprime completamente la emisión al continuo.
+
+
+
+El dominio de estas herramientas me permite abordar el estudio de fenómenos colectivos en sistemas espín-bosón multimodo con acoplamiento fuerte. La comprensión de efectos no markovianos, estados ligados e interferencia en átomos gigantes constituye la base para extender estos conceptos a sistemas multiqubit y configuraciones de Dicke multimodo.
+
+El formalismo de transformada de Laplace y la caracterización de funciones espectrales permitirán analizar sistemáticamente cómo la competencia entre acoplamiento fuerte, disipación y efectos de memoria modifica las transiciones de fase cuántica y genera nuevos estados estacionarios fuera del equilibrio.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

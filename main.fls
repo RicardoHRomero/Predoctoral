@@ -697,6 +697,21 @@ INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/t
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT ./Images APS v1/GRWA.pdf
+INPUT ./Images APS v1/GRWA.pdf
+INPUT ./Images APS v1/GRWA.pdf
+INPUT ./Images APS v1/GRWA.pdf
+INPUT ./Images APS v1/GRWA.pdf
+INPUT ./Images APS v1/Estado Base.pdf
+INPUT ./Images APS v1/Estado Base.pdf
+INPUT ./Images APS v1/Estado Base.pdf
+INPUT ./Images APS v1/Estado Base.pdf
+INPUT ./Images APS v1/Estado Base.pdf
+INPUT ./Images APS v1/Promedio.pdf
+INPUT ./Images APS v1/Promedio.pdf
+INPUT ./Images APS v1/Promedio.pdf
+INPUT ./Images APS v1/Promedio.pdf
+INPUT ./Images APS v1/Promedio.pdf
 INPUT ./Images/Calendario.png
 INPUT ./Images/Calendario.png
 INPUT ./Images/Calendario.png
