@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1761443969.43865 "main.aux" "main.bbl" "main" 1761443975.7054 0
-  "./main-blx.bib" 1761443975.17567 345 f7f72607198a3aba219209b813f73728 ""
+["bibtex main"] 1761624349.21649 "main.aux" "main.bbl" "main" 1761624355.51783 0
+  "./main-blx.bib" 1761624354.92364 345 f7f72607198a3aba219209b813f73728 ""
   "./references.bib" 1761438085.08338 214777 bce6dbcdc849217debe695de9fb7693f ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1741388039 65510 b1f696b0241395385f422f67543c37fd ""
-  "main.aux" 1761443975.14736 29327 c82b54898637c1b43fa75c555ad8c166 "pdflatex"
+  "main.aux" 1761624354.89821 26631 44d224572f9eeae154a1eeebf8744334 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761443969.62886 "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" "main.pdf" "main" 1761443975.70578 0
-  "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" 1761443962.99 55583 d18d64df9162e3c8ae45262241b5aee1 ""
+["pdflatex"] 1761624349.44597 "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" "main.pdf" "main" 1761624355.51848 0
+  "/Users/rich/Documentos/Doctorado/02 Trimestre/Predoctoral/Latex/main.tex" 1761624341.78914 43070 d359a139296ea314bd9c7e54733408bb ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1741388039 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1741388039 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1741388039 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -351,15 +351,15 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1741388039 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1741388039 3346131 6b13676e233c26f10957e49b174b554b ""
-  "Images/Tabla Cronologia.png" 1761178614 198342 9d67d78d6750b3e416079a25c8677d23 ""
+  "Images/Calendario.png" 1761617770.50179 80487 129fd7f6218ab88901c54965268c6129 ""
   "Images/cavity1.png" 1761178614 135570 1c3c3c48f9b0f21a03a669604637b74b ""
   "Images/uam.png" 1761178614 153215 85e120fad0f4f334d8cc422fcc7ba156 ""
-  "main.aux" 1761443975.14736 29327 c82b54898637c1b43fa75c555ad8c166 "pdflatex"
-  "main.bbl" 1761443969.62242 114177 3b2c9041f49f463f70b173b5e4b5508e "bibtex main"
-  "main.out" 1761443975.16933 5522 0bb743a1602058cf8945237020338d89 "pdflatex"
-  "main.run.xml" 1761443975.17697 2681 d78b537447acdc98ce8964b30b1fcdf4 "pdflatex"
-  "main.tex" 1761443962.99 55583 d18d64df9162e3c8ae45262241b5aee1 ""
-  "main.toc" 1761443975.17708 2558 78a52cee13997539e2abc5f271f05c58 "pdflatex"
+  "main.aux" 1761624354.89821 26631 44d224572f9eeae154a1eeebf8744334 "pdflatex"
+  "main.bbl" 1761624349.43682 110750 404ba8533144e990201aaf7081f6f371 "bibtex main"
+  "main.out" 1761624354.91786 4138 a83fb9ea938de09620ffaa5a45e69dc6 "pdflatex"
+  "main.run.xml" 1761624354.92488 2681 d78b537447acdc98ce8964b30b1fcdf4 "pdflatex"
+  "main.tex" 1761624341.78914 43070 d359a139296ea314bd9c7e54733408bb ""
+  "main.toc" 1761624354.92499 1993 92150308937f1577fa8d72ea4c8b8191 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"

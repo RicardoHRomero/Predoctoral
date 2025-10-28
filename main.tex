@@ -305,22 +305,35 @@ Recientemente, el modelo de Dicke multimodo en regímenes fuera de equilibrio ha
 Este proyecto de investigación doctoral tiene como objetivo principal estudiar sistemáticamente los modelos de Rabi y Dicke en regímenes multimodo y multiqubit, con especial énfasis en sistemas abiertos y fuera de equilibrio. La investigación se estructura progresivamente, comenzando con el modelo de Rabi de dos qubits, sistemas de multifrecuencia bosónica como los átomos gigantes y  avanzando hacia configuraciones colectivas más complejas del modelo de Dicke  donde los efectos no-Markovianos y la estructura  extendida enriquecen sustancialmente la dinámica.
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objetivos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-El objetivo general de este proyecto es estudiar esquemas fuera de equilibrio en el modelo de Dicke abierto para explorar nuevas fases cuánticas y aplicaciones en el terreno de la información cuántica. 
+El objetivo central de esta investigación doctoral es establecer un marco teórico para comprender la dinámica colectiva en sistemas cuánticos abiertos con interacción luz-materia en regímenes de acoplamiento intenso, multimodo y multiqubit. Buscamos describir cómo la competencia entre coherencia, disipación y bombeo externo genera nuevas fases cuánticas fuera del equilibrio, con relevancia tanto para la física fundamental como para el desarrollo de tecnologías cuánticas.
+
+Este objetivo se aborda progresivamente, desde modelos de baja dimensionalidad —como el de Rabi extendido con interacciones entre qubits— hasta configuraciones colectivas del modelo de Dicke abierto y multimodo. El hilo conductor será identificar los mecanismos que permiten la emergencia de orden cuántico en presencia de disipación, memoria y acoplamientos espaciales no triviales, como los presentes en sistemas con átomos gigantes.
+
+\subsection*{Objetivos específicos}
 
 \begin{itemize}
-    \item Comprender el modelo de Dicke multimodo analizando las transiciones de fase superradiante, considerando el caso de 1 o 2 hasta $N$ emisores.
-    %%%
-    \item Estudiar el modelo de Dicke multimodo abierto y fuera de equilibrio utilizando el formalismo de Keldysh. 
-    %%%
-    \item Analizar como la competencia entre fluctuaciones cuánticas, disipación y bombeo afecta las propiedades del sistema a diferentes escalas de energía. 
-    %%%
-    \item Explorar aplicaciones como la posibilidad de cristales de tiempo en el modelo de Dicke multimodo en baños no markovianos, la presencia de memoria a largo plazo y el caso de interacciones entre emisores. 
+    \item Analizar el modelo de Rabi de dos qubits con interacciones materiales, Eq.~\eqref{Hamiltoniano de Rabi dos qubits con interacciones} y caracterizar como la inclusión de términos de un qubit e interacciones materiales modifican el espectro de energía. Este estudio servirá como base conceptual para entender el acoplamiento colectivo entre múltiples emisores.
+    
+    \item Estudiar configuraciones de átomos gigantes, para entender fenómenos no markovianos, analizando los retardos y correlaciones temporales inducidos por el entorno, así como su impacto sobre la coherencia y la memoria cuántica para posibles aplicaciones en Rabi y Dicke.
+    
+
+    \item Desarrollar una descripción teórica del modelo de Rabi abierto incorporando disipación y bombeo en el marco de la ecuación maestra de Lindblad, con el fin de identificar regímenes estacionarios fuera del equilibrio y la posible aparición de transiciones disipativas.
+
+    \item Extender el análisis al modelo de Dicke multiqubit, investigando cómo los emisores afectan las transiciones superradiantes, las propiedades críticas del sistema y la estructura de fases cuánticas de equilibrio y no equilibrio.
+
+    \item Explorar el modelo de Dicke multimodo abierto, utilizando el formalismo de Keldysh para describir la competencia entre múltiples modos bosónicos, el bombeo incoherente y la disipación, con especial atención a la emergencia de oscilaciones coherentes sostenidas y cristales de tiempo.
+
+    
+
+    %\item \textbf{Proponer un marco general para la ingeniería de entornos cuánticos} (\textit{reservoir engineering}) que permita diseñar o controlar estados colectivos estacionarios, con potencial aplicación en simuladores cuánticos, procesamiento de información y almacenamiento coherente de excitaciones.
+
 \end{itemize}
 
 
@@ -331,21 +344,28 @@ El objetivo general de este proyecto es estudiar esquemas fuera de equilibrio en
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Esta sección presenta el marco metodológico para abordar los primeros objetivos de esta propuesta doctoral. El planteamiento se estructura en dos partes:  el estudio del modelo de Rabi extendido a dos qubits con interacciones materiales, como primer acercamiento a sistemas multiqubit; y el análisis de átomos gigantes en guías de onda estructuradas, que permiten explorar fenómenos multimodales bosónicos y efectos no markovianos. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modelo de Rabi de dos qubits con interacciones materiales}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Este estudio sistemático del modelo de Rabi de dos qubits con interacciones materiales representa un paso inicial hacia la comprensión de sistemas multiqubit. Implementamos tres aproximaciones  para elucidar cómo la adición de un segundo qubit y las interacciones materiales modifican el espectro energético y los estados del sistema.
+Este estudio sistemático del modelo de Rabi con dos qubits e interacciones materiales constituye un primer paso hacia la comprensión de sistemas multiqubit. El objetivo es analizar cómo la incorporación de un segundo qubit y la presencia de interacciones materiales modifican el espectro energético y los estados propios del sistema.
+
+Con este propósito, se implementan tres aproximaciones  que nos permiten realizar futuras extensiones hacia sistemas con un mayor número de qubits, proporcionando un marco conceptual para explorar la evolución de la dinámica cuántica conforme se incrementa la complejidad del modelo.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Diagonalización numérica exacta}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Como referencia, empleamos diagonalización numérica directa del Hamiltoniano~\eqref{Hamiltoniano de Rabi dos qubits con interacciones}, que proporciona resultados exactos para validar nuestras aproximaciones analíticas. La elección del subespacio simétrico ($j=1$) se justifica por la invariancia del Hamiltoniano bajo permutación de qubits idénticos ($\omega_{01} \approx \omega_{02}$), confinando la dinámica al sector triplete donde los operadores colectivos $\hat{J}_{\alpha}$ capturan completamente el comportamiento del sistema.
+Como referencia, empleamos diagonalización numérica directa del Hamiltoniano~\eqref{Hamiltoniano de Rabi dos qubits con interacciones}, que proporciona resultados numéricamente exactos para validar nuestras aproximaciones analíticas. 
 
-En la base producto $|\Psi\rangle = |n\rangle \otimes |j, m\rangle$ con $j=1$, los elementos de matriz son:
+La elección del subespacio simétrico ($j=1$) constituye una simplificación física. Se justifica por la invariancia del Hamiltoniano bajo permutación de qubits idénticos ($\omega_{01} \approx \omega_{02}$), que confina la dinámica al sector triplete donde los operadores colectivos $\hat{J}_{\alpha} = \frac{1}{2}(\hat{\sigma}_{\alpha}^{1} + \hat{\sigma}_{\alpha}^{2})$ capturan completamente el comportamiento del sistema. Físicamente, esto significa que los qubits son indistinguibles y se comportan como una entidad colectiva. El singlete antisimétrico ($j=0$) permanece desacoplado tanto del campo como de las interacciones materiales, haciendo que no participen en la dinámica principal.
+
+En la base producto $|\Psi\rangle = |n\rangle \otimes |j, m\rangle$ con $j=1$ y $m = -1, 0, 1$, los elementos de matriz adquieren una estructura físicamente transparente:
 
 \small{ 
 \begin{gather}
@@ -358,32 +378,36 @@ En la base producto $|\Psi\rangle = |n\rangle \otimes |j, m\rangle$ con $j=1$, l
     \left. +\sqrt{j(j+1) - m(m-1)}\sqrt{j(j+1)-(m-1)(m-2)}\delta_{m',m-2}\right) \label{numerica two qubit}
 \end{gather}}   
 
+Cada término tiene una interpretación física clara: el primer renglón describe las energías libres del oscilador y los qubits (modificada por $\eta_z$), el segundo captura el acoplamiento qubit-campo, y el tercero representa las interacciones materiales de tipo Ising ($\eta_z$) y XY ($\eta_x$).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Aproximación adiabática}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Como primera aproximación analítica, consideramos el límite adiabático ($\omega_0 \rightarrow 0$) donde el oscilador se ajusta instantáneamente a la configuración de los qubits. La transformación $\hat{U} = \exp\left[{\beta(\hat{a}^{\dagger}-\hat{a})}\right]$ genera estados de Fock desplazados que describen el reacomodo del campo para cada configuración de qubits.
+Como primera aproximación analítica, consideramos el límite adiabático ($\omega_0 \rightarrow 0$), donde el oscilador se ajusta instantáneamente a la configuración de los qubits. Esta aproximación corresponde físicamente al régimen donde la frecuencia del oscilador domina sobre el desacople de los qubits, una situación común en sistemas de circuitos QED donde $\omega \gg \omega_0$.
 
-Esta aproximación conserva solo acoplamientos entre estados con el mismo número de excitaciones, proporcionando una imagen física intuitiva pero limitada al ignorar efectos de tunelado cuántico.
+La transformación $\hat{U} = \exp\left[{\beta(\hat{a}^{\dagger}-\hat{a})}\right]$ genera estados de Fock desplazados que describen el reacomodo del campo para cada configuración de qubits. Físicamente, podemos visualizar esto como si el campo electromagnético se ''adaptara'' instantáneamente a la orientación de los espines, creando pozos de potencial efectivos que dependen del estado de los qubits.
+
+Esta aproximación conserva únicamente acoplamientos entre estados con el mismo número de excitaciones, resultando en un Hamiltoniano efectivo con estructura de bloques diagonales. Si bien proporciona una imagen física intuitiva y captura correctamente el estado fundamental, su limitación principal reside en ignorar completamente los efectos de tunelado cuántico ($\omega_0 \neq 0$), lo que lleva a discrepancias significativas en el espectro de excitaciones.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Aproximación de la onda rotante generalizada}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-La Aproximación Generalizada de Onda Rotante (\textit{Generalized Rotating Wave Approximation} o GRWA)~\cite{irish2007,albert2011,yu2012,zhang2015,zhangyu2016,zhangyu2017} extiende el enfoque adiabático reintroduciendo consistentemente el tunelado cuántico mediante la transformación polarónica:
+La Aproximación Generalizada de Onda Rotante (\text{Generalized Rotating Wave Approximation} o GRWA)~\cite{irish2007,albert2011,yu2012,zhang2015,zhangyu2016,zhangyu2017}  extiende el enfoque adiabático reintroduciendo consistentemente el tunelado cuántico mediante una transformación polarónica:
 
 \begin{gather}\label{transformation beta}
     \hat{U} = \exp\left[ \beta\hat{J}_{x}(\hat{a}^{\dagger} - \hat{a}) \right],
 \end{gather}
 
-con $\beta=g/\omega$. Esta transformación captura el desplazamiento colectivo del campo electromagnético inducido por los qubits, mientras que la minimización variacional de la energía del estado fundamental incorpora autoconsistentemente los efectos de $\omega_0$.
+con $\beta = g/\omega$ determinado variacionalmente mediante minimización de la energía del estado fundamental. Físicamente, esta transformación representa un desplazamiento colectivo del campo electromagnético que incorpora de manera autoconsistente la retroalimentación entre los qubits y el oscilador.
 
-La GRWA preserva la estructura de bloques manejable de la aproximación adiabática pero incluye correcciones esenciales que permiten describir transiciones entre diferentes números de excitaciones, logrando alta precisión incluso para acoplamientos fuertes.
+La potencia de la GRWA reside en que preserva la estructura de bloques manejable de la aproximación adiabática mientras incluye correcciones esenciales que permiten describir transiciones entre diferentes números de excitaciones. Matemáticamente, esto se logra mediante la resolución de un problema de valores propios en cada bloque del Hamiltoniano transformado, donde ahora se retienen acoplamientos cruciales que la aproximación adiabática descartaba.
 
-Esta metodología progresiva —desde la aproximación adiabática simple hasta la GRWA más sofisticada, validadas contra resultados numéricos exactos— establece las bases para extender nuestro análisis a sistemas multiqubit más complejos, donde las interacciones materiales y efectos colectivos juegan roles cruciales en la formación del espectro energético.
- 
+Los resultados demuestran que la GRWA aproxima incluso regimenes de acoplamiento fuerte, capturando  tanto el estado fundamental como las excitaciones de baja energía. Esta robustez la convierte en una herramienta  para explorar regímenes de acoplamiento donde los métodos perturbativos convencionales fallan.
 
-\clearpage
+Esta metodología progresiva —desde la aproximación adiabática simple hasta la GRWA, validadas sistemáticamente contra resultados numéricos exactos— establece las bases conceptuales y técnicas para extender nuestro análisis a sistemas multiqubit más complejos.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,111 +415,86 @@ Esta metodología progresiva —desde la aproximación adiabática simple hasta 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-El estudio de átomos gigantes representa una extensión natural de nuestros modelos previos hacia sistemas donde la estructura espacial extendida del emisor introduce efectos no markovianos y de interferencia. A diferencia de los emisores puntuales tradicionales, los átomos gigantes acoplan al campo electromagnético en múltiples puntos espaciales separados, lo que modifica fundamentalmente la dinámica de emisión espontánea.
+El estudio de átomos gigantes representa la segunda paso de nuestra metodología, extendiendo nuestro análisis hacia sistemas donde la estructura espacial extendida del emisor introduce fenómenos ricos en física no markoviana y efectos de interferencia, además ofrece una plataforma para explorar interacciones luz-materia en regímenes multimodales.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Modelo básico y transformación de Fourier}
+\subsubsection{Modelo básico y transformada de Fourier}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Consideramos un emisor de dos niveles acoplado a un arreglo unidimensional de cavidades, descrito por el Hamiltoniano:
+El punto de partida es un emisor de dos niveles acoplado a un arreglo unidimensional de cavidades, descrito por el Hamiltoniano:
 
 \[H = \delta\sigma^{+}\sigma^{-} + \omega_{0}\sum_{n}a^{\dagger}_{n}a_{n} + \xi\sum_{n}\left(a^{\dagger}_{n+1}a_{n} + a^{\dagger}_{n}a_{n+1}\right) + g_{0}\left(\sigma^{+}a_{0} + \sigma^{-}a^{\dagger}_{0}\right).\]
 
-La clave para resolver este sistema está en aprovechar la invariancia traslacional mediante la transformación de Fourier discreta $a_{k} = N^{-1/2}\sum_{n}e^{ikn}a_{n}$, que diagonaliza la guía de onda y revela la relación de dispersión $\omega_{k} = 2\xi\cos k$. Físicamente, esto significa que en lugar de pensar en cavidades individuales, trabajamos con modos extendidos que se propagan a lo largo de la guía.
+La estrategia de solución aprovecha la invariancia traslacional del sistema mediante la transformación de Fourier discreta $a_{k} = N^{-1/2}\sum_{n}e^{ikn}a_{n}$. Esta transformación es fundamental pues diagonaliza la guía de onda, revelando la relación de dispersión $\omega_{k} = 2\xi\cos k$ que describe cómo se propagan los fotones a través del arreglo.
+
+Físicamente, este cambio de perspectiva —de cavidades localizadas a modos extendidos— es crucial: en lugar de pensar en fotones saltando entre cavidades vecinas, trabajamos con modos colectivos que se propagan como ondas a lo largo de la guía. Esta representación nos permite describir procesos de emisión espontánea, donde un átomo excitado emite radiación que se propaga lejos del punto de emisión.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Función espectral y dinámica no markoviana}
+\subsubsection{Función espectral}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-La función espectral $J(\omega) = \frac{2g_{0}^{2}}{\sqrt{4\xi^{2}-\omega^{2}}}$ captura cómo los diferentes modos de frecuencia $\omega$ contribuyen al acoplamiento. Las singularidades en $\omega = \pm 2\xi$ (bordes de banda) indican el colapso de la aproximación markoviana. Cerca del centro de la banda, $J(\omega)$ es aproximadamente constante y recuperamos la decadencia exponencial tradicional, pero cerca de los bordes la dinámica se vuelve altamente no markoviana.
+La función espectral $J(\omega) = \frac{2g_{0}^{2}}{\sqrt{4\xi^{2}-\omega^{2}}}$ emerge como una cantidad central que conecta la estructura de la guía de onda con la dinámica del emisor. Esta función captura cómo los diferentes modos de frecuencia $\omega$ contribuyen al acoplamiento efectivo con el emisor.
+
+El comportamiento de $J(\omega)$ muestra lo siguiente: cerca del centro de la banda ($\omega \approx 0$), la función es aproximadamente constante, recuperando la dinámica markoviana tradicional con decadencia exponencial. Sin embargo, cerca de los bordes de banda ($\omega \approx \pm 2\xi$), las singularidades de van Hove indican el colapso de la aproximación markoviana y el surgimiento de dinámica altamente no markoviana.
+
+Estas singularidades tienen consecuencias físicas profundas: representan un ralentizamiento crítico de la velocidad de grupo de los fotones, mostrando  una acumulación de densidad de estados que modifica cualitativamente la dinámica de emisión.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Transformada de Laplace y solución exacta}
+\subsubsection{Transformada de Laplace}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Para ir más allá de la aproximación de Weisskopf-Wigner, empleamos la transformada de Laplace que permite descomponer la solución en contribuciones de estados ligados y de scattering:
+Para ir más allá de la aproximación de Weisskopf-Wigner, empleamos la transformada de Laplace, que permite descomponer analíticamente la solución temporal en contribuciones físicamente transparentes:
 
 \[\alpha(t) = \lim_{\epsilon\to 0}\int_{-\omega_{\max}}^{-\omega_{\min}}\frac{dy}{2\pi}\frac{J(-y)e^{iyt}}{[y+\Delta-iG(-\epsilon+iy)]\,[y+\Delta-iG(\epsilon+iy)]} + \sum_{j}r_{j}e^{-iy_{j}t}.\]
 
-El primer término representa estados de scattering dentro del continuo, mientras que el segundo corresponde a estados ligados (BOC) que persisten en el estado estacionario. Esta descomposición explica físicamente por qué parte de la excitación queda atrapada localmente alrededor del emisor.
+Esta descomposición es notable: el primer término (integral sobre el corte de rama) representa la contribución de estados de scattering dentro del continuo, que eventualmente decaen a cero. El segundo término (suma sobre residuos) corresponde a estados ligados fuera del continuo (BOC) que persisten indefinidamente en el estado estacionario.
+
+Físicamente, esta estructura explica por qué parte de la excitación inicial queda atrapada localmente alrededor del emisor, formando un estado ligado fotónico cuya función de onda decae exponencialmente con la distancia. La localización espacial de estos estados puede caracterizarse cuantitativamente mediante la longitud de localización $\lambda_{\pm} = \cosh^{-1} (|y_{\pm}|/2\xi)$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Extensión a átomos gigantes multimodo}
+\subsubsection{Extensión a átomos gigantes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-La generalización a átomos gigantes que se acoplan en $N_c$ posiciones introduce dependencia espacial explícita:
+La generalización a átomos gigantes —donde un mismo emisor se acopla al campo en $N_c$ posiciones espacialmente separadas— introduce una capa adicional de riqueza física. El acoplamiento efectivo se modifica a:
 
-\[\tilde{g}_k = \frac{g_0}{N_c\sqrt{N}} \frac{\sin(kdN_c/2)}{\sin(kd/2)}.\]
+\[\tilde{g}_k = \frac{g_0}{N_c\sqrt{N}} \frac{\sin(kdN_c/2)}{\sin(kd/2)},\]
 
-La función espectral efectiva $J_{\text{eff}}(\omega) = J(\omega) \mathcal{G}(\omega)$ ahora presenta ceros en frecuencias específicas $\omega_m = 2\xi\cos(\pi(2m+1)/d)$, donde emergen estados ligados dentro del continuo (BIC). Estos BIC surgen de interferencia destructiva que confina fotones entre los puntos de acoplamiento.
+donde $d$ es la separación entre puntos de acoplamiento.
 
+Esta dependencia espacial modifica fundamentalmente la función espectral efectiva $J_{\text{eff}}(\omega) = J(\omega) \mathcal{G}(\omega)$, que ahora presenta ceros en frecuencias específicas $\omega_m = 2\xi\cos(\pi(2m+1)/d)$. En estas frecuencias, emergen estados ligados dentro del continuo (BIC) —estados que, contra-intuitivamente, están embebidos en el continuum pero no decaen.
 
-
-
-\clearpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Átomos Gigantes con modos multimodo}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Modelo de Dicke multimodal con interacciones materiales}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-
-
-
-
-
-En este proyecto, se abordará el estudio de sistemas cuánticos abiertos y fuera de equilibrio. Se iniciará con el modelo de Rabi~\cite{rabi1936}, empleando técnicas  de diagonalización numéricas~\cite{irish2007} y aproximaciones perturbativas, como la transformación del polarón y métodos variacionales~\cite{gonzalez2021}, para sentar las bases conceptuales. A continuación, se avanzará hacia el modelo de Rabi multimodo~\cite{peng2021}. Finalmente, se continuará al modelo de Dicke multimodo, permitiendo el estudio de transiciones de fase disipativas y fenómenos críticos en sistemas abiertos. 
-
-Para abordar el estudio de sistemas de interacción luz-materia en sistemas abiertos y fuera de equilibrio, se empleará la teoría de Keldysh. Esta metodología es particularmente adecuada para sistemas cuánticos con interacciones fuertes, donde coexisten dinámicas coherentes y disipativas~\cite{kamenev2023,rammer2011}. A diferencia de los métodos tradicionales basados en ecuaciones maestras, la teoría de Keldysh permite describir tanto la evolución unitaria como los efectos disipativos, facilitando el análisis de estados estacionarios no térmicos y transiciones de fase en sistemas complejos~\cite{Sieberer2016}.  La formulación de Keldysh extiende la teoría cuántica de campos (\textit{Quantum Field Theory} o QFT) a través de las integrales de camino en el contorno de Keldysh, para calcular funciones de correlación y respuesta en tiempo real, lo que es esencial para comprender la dinámica del sistema y su comportamiento crítico.
-
-Además, se integrará la teoría de renormalización funcional \textit{Functional Renormalization Group} o FRG), basada en la ecuación de Wetterich~\cite{wetterich1993}, para analizar la disipación a diferentes escalas de energía, especialmente en regímenes críticos o durante transiciones de fase. La FRG permitirá una descripción completa del sistema desde escalas microscópicas hasta macroscópicas, capturando efectos no perturbativos y estudiando la competencia entre coherencia y disipación~\cite{angelakis2007}. Esta aproximación será fundamental para investigar fenómenos como la relajación hacia estados estacionarios y la formación de nuevas fases no convencionales.
-
-En el estudio de sistemas cuánticos abiertos, la teoría de sistemas cuánticos disipativos proporciona un enfoque para describir la interacción entre un sistema y su entorno. Bajo la aproximación markoviana, donde se asume que la memoria del baño es despreciable, esta interacción puede modelarse mediante ecuaciones maestras de Lindblad~\cite{breuer2003,Lindblad1976}, las cuales describen la evolución temporal del sistema de manera efectiva. Este enfoque es esencial para comprender la dinámica de sistemas acoplados a baños markovianos, donde la disipación ocurre de manera instantánea y sin correlaciones temporales significativas~\cite{weiss2012}.
-
-Finalmente, se explorará la aparición de memoria a largo plazo en sistemas de Dicke acoplados a baños no markovianos~\cite{zhu2019,lundgren2020,fiorelli2020}. A diferencia de los baños markovianos, donde la disipación es instantánea, los baños no markovianos introducen correlaciones temporales que pueden alterar significativamente la dinámica del sistema~\cite{orazio2016}. Este enfoque permitirá estudiar cómo la memoria a largo plazo influye en la relajación del sistema y en la naturaleza de las transiciones de fase fuera de equilibrio~\cite{lundgren2020}. %En particular, se investigará la formación y estabilidad de cristales de tiempo, fases de la materia que rompen espontáneamente la simetría de traslación temporal, utilizando el modelo de Dicke multimodo como plataforma teórica~\cite{jager2024}.
-
-%Para abordar el estudio de sistemas cuánticos abiertos, fuera de equilibrio con interacciones fuertes con la posibilidad de realizar bombeos, la teoría de Keldysh se ha convertido en una herramienta importante~\cite{kamenev2023,rammer2011}. A diferencia de los métodos tradicionales basados en la formulación de ecuaciones maestras, la teoría de Keldysh proporciona un marco teórico para describir tanto la dinámica coherente como la disipativa en sistemas cuánticos fuera de equilibrio~\cite{Sieberer2016}. Esta teoría se basa en la formulación de integrales de camino en el contorno de Keldysh, que permite tratar de manera sistemática la evolución temporal de sistemas cuánticos abiertos, incluyendo efectos como la disipación.
-
-
-%La teoría de Keldysh es particularmente útil para estudiar sistemas con un gran número de grados de libertad, como los que aparecen en el Modelo de Dicke~\cite{torres2013,damanet2019}, donde se ha observado que al someter un bombeo externo con disipación se encuentran transiciones de fase fuera de equilibrio que difieren de las observadas en el modelo de Dicke cerrado~\cite{Sieberer2016}.
-%Estas transiciones están caracterizadas por exponentes críticos estáticos y dinámicos que reflejan la naturaleza térmica efectiva de las fluctuaciones de baja frecuencia, incluso en ausencia de un baño térmico externo~\cite{torres2013}. 
-%Por lo tanto, seria interesante  analizar propiedades críticas y transiciones de fase del modelo de Dicke multimodo abierto, disipativo y con desorden, por ejemplo, la relajación hacia estados estacionarios~\cite{buchhold2013}, el envejecimiento (aging)~\cite{lang2016}, y la formación de fase de no equilibrio~\cite{gilmore1978}. Estos fenómenos son de gran interés tanto desde el punto de vista teórico como experimental, ya que permiten estudiar cómo las fluctuaciones cuánticas y la disipación afectan la evolución temporal del sistema. 
-%En particular, se espera que el desorden induzca una dinámica lenta y una distribución amplia de tiempos de relajación, lo que puede llevar a comportamientos de envejecimiento similares a los observados en vidrios de espín clásicos~\cite{buchhold2013}. 
-%Además, la presencia de disipación, como la pérdida de fotones en la cavidad, puede modificar significativamente las propiedades espectrales y de correlación del sistema, llevando a la aparición de nuevas fases fuera de equilibrio.
-
-
-%Utilizando la formulación de Keldysh como marco teórico a sistemas abiertos no toma en cuenta la disipación a diferentes escalas de energía, complicando el análisis, especialmente en transiciones de fase o en regímenes críticos~\cite{Sieberer2016}. La teoría de renormalización funcional (FRG, por sus siglas en inglés) basada en la ecuación de Wetterich~\cite{wetterich1993,Sieberer2016}  proporciona una descripción completa del sistema, desde la escala microscópica hasta la macroscópica, capturando efectos no perturbativos y permitiendo el estudio de la competencia entre coherencia y disipación~\cite{angelakis2007,Sieberer2016}. En este contexto, utilizando FRG, nos permitira analizar las fluctuaciones cuánticas y la disipación a diferentes escalas de energía, especialmente en las transiciones de fase al modelo de Dicke multimodo. 
-
-
-%Por último, uno de los fenómenos de los sistemas de Dicke fuera de equilibrio es la aparición de memoria a largo plazo~\cite{zhu2019,lundgren2020,fiorelli2020}, un fenómeno que surge cuando el sistema está acoplado a baños no markovianos. A diferencia de los baños markovianos, donde la disipación es instantánea y no depende de la historia del sistema, los baños no markovianos introducen correlaciones temporales que pueden alterar drásticamente la dinámica del sistema~\cite{orazio2016}. Este tipo de memoria a largo plazo no solo afecta la relajación del sistema hacia un estado estacionario, sino que también puede influir en la naturaleza de las transiciones de fase~\cite{lundgren2020}. En particular, R. Lundgren en el 2020~\cite{lundgren2020} exploró cómo la interacción entre baños markovianos y no markovianos en sistemas de Dicke puede llevar a transiciones de fase clásicas fuera de equilibrio, donde los exponentes críticos dependen de la densidad espectral del baño no markoviano. Una de las transiciones de fase involucradas en sistemas de no equilibrio son los cristales de tiempo~\cite{zhu2019}. Los cristales de tiempo son fases de la materia que rompen espontáneamente la simetría de traslación temporal, exhibiendo un comportamiento periódico en el tiempo incluso en ausencia de un campo externo periódico~\cite{jager2024}. En particular, los sistemas de Dicke fuera de equilibrio representan una plataforma ideal para estudiar la formación y estabilidad de cristales de tiempo.
-
-%B. Zhu en el 2019~\cite{zhu2019}, investigo la estabilidad de los cristales de tiempo en el modelo de Dicke. En su trabajo, demuestran que el comportamiento de cristal de tiempo puede persistir incluso en presencia de interacciones de corto alcance que rompen la naturaleza colectiva del modelo de Dicke tradicional. Además,  identifican que la disipación juega un papel crucial en la estabilización de estos cristales de tiempo, actuando como un mecanismo de enfriamiento que contrarresta el calentamiento inducido por el bombeo periódico al sistema. En este contexto, uno de los objetivos de esta investigación es explorar la formación de cristales de tiempo en sistemas de Dicke multimodo fuera de equilibrio.
-
-
-
-
+El origen físico de los BIC reside en interferencia destructiva: las diferentes rutas que puede tomar un fotón emitido desde los distintos puntos de acoplamiento interfieren destructivamente, impidiendo que la radiación se escape al infinito. Estos estados confinan fotones en la región entre los puntos de acoplamiento, transformando efectivamente al átomo gigante en una cavidad óptica.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Resultados Esperados}
+\subsection{Conclusión }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+La metodología desarrollada establece un marco  progresivo para abordar los desafíos centrales de esta investigación doctoral. El estudio del modelo de Rabi de dos qubits con interacciones materiales provee las herramientas esenciales para comprender efectos colectivos en sistemas multiqubit, mientras que el análisis de átomos gigantes en guías de onda estructuradas permite explorar fenómenos no markovianos y multimodales.
+
+Esta base metodológica no solo permite alcanzar los objetivos inmediatos de la tesis, sino que también habilita extensiones hacia sistemas con más qubits, geometrías complejas y dinámicas fuera del equilibrio con bombeo y disipación. Su versatilidad y coherencia la consolidan como una contribución relevante a las metodologías de investigación en óptica e información cuántica.
 
 
+\section{Resultados esperados}
 
+Esta investigación doctoral tiene como objetivo establecer un marco teórico para comprender los fenómenos colectivos en sistemas cuánticos abiertos, tanto multimodo como multiqubit. 
+
+En una primera etapa, se abordará el estudio del modelo de Rabi con dos qubits acoplados y con interacciones materiales. El objetivo es caracterizar cómo la presencia de interacciones materiales entre qubits modifica el espectro energético del sistema. Se espera identificar patrones que puedan extenderse posteriormente a sistemas con mayor número de qubits. Para ello, se utilizarán distintas aproximaciones, desde métodos adiabáticos simples hasta la GRWA, comparándolas con resultados numéricos exactos.
+
+En la línea de investigación sobre átomos gigantes, se extenderá el modelo hacia regímenes de acoplamiento fuerte, donde la interacción entre los emisores y el campo no puede tratarse como una perturbación débil. En estos sistemas, los estados excitados pueden formar \textit{estados ligados} dentro o fuera del continuo fotónico, lo que significa que el fotón puede quedar parcialmente confinado alrededor del átomo. La extensión espacial del emisor permite aprovechar efectos de interferencia para atrapar fotones en regiones específicas del espacio, generando cavidades ópticas ''virtuales''. 
+
+Para describir la dinámica fuera del equilibrio en sistemas abiertos con interacciones fuertes, se empleará la teoría de Keldysh. Este formalismo extiende la teoría cuántica de campos (\textit{Quantum Field Theory}, QFT) al dominio del tiempo real mediante integrales de camino definidas sobre un contorno de Keldysh~\cite{kamenev2023,rammer2011}. A diferencia de los métodos tradicionales basados en ecuaciones maestras, la formulación de Keldysh permite tratar simultáneamente procesos coherentes (unitarios) y disipativos, capturando la evolución completa del sistema. Esto es especialmente útil para describir estados estacionarios no térmicos y analizar transiciones de fase en presencia de disipación y bombeo externo~\cite{Sieberer2016}.
+
+De manera complementaria, se integrará la teoría del grupo de renormalización funcional (\textit{Functional Renormalization Group}, FRG), basada en la ecuación de Wetterich~\cite{wetterich1993}. Esta herramienta permite analizar la disipación a distintas escalas de energía y seguir la evolución del sistema desde sus interacciones microscópicas hasta comportamientos macroscópicos emergentes. La FRG resulta esencial en regímenes críticos, donde los métodos perturbativos fallan, ya que captura de manera no aproximada la competencia entre coherencia y disipación~\cite{angelakis2007}. Con ello, será posible estudiar la relajación hacia estados estacionarios y la formación de fases cuánticas no convencionales.
+
+El estudio de sistemas abiertos también se abordará mediante la teoría de sistemas cuánticos disipativos, que describe cómo un sistema se acopla a su entorno. En la llamada aproximación markoviana, se asume que el entorno (o “baño”) no tiene memoria, de modo que los efectos de disipación ocurren instantáneamente. Bajo esta suposición, la evolución del sistema puede describirse mediante las ecuaciones maestras de Lindblad~\cite{breuer2003,Lindblad1976}, las cuales proporcionan una descripción efectiva ampliamente utilizada en óptica cuántica~\cite{weiss2012}.
+
+Finalmente, se explorarán los efectos de memoria a largo plazo en sistemas de Dicke acoplados a baños no markovianos~\cite{zhu2019,lundgren2020,fiorelli2020}. En este caso, el entorno conserva información sobre su interacción previa con el sistema, generando correlaciones temporales que modifican la dinámica cuántica~\cite{orazio2016}. Este tipo de acoplamiento puede dar lugar a comportamientos ricos y no triviales, como oscilaciones persistentes o relajación no exponencial, y alterar la naturaleza de las transiciones de fase fuera del equilibrio~\cite{lundgren2020}.
+
+Se espera que los resultados de esta investigación contribuyan al entendimiento del modelo de Dicke multimodo en presencia de disipación y bombeo, con énfasis en fenómenos como las transiciones de fase superradiantes, la competencia entre modos y los efectos del desorden o de las interacciones entre emisores. Asimismo, se buscará identificar nuevas fases fuera del equilibrio mediante el formalismo de Keldysh, incluyendo la posible formación de \textit{cristales de tiempo} y el desarrollo de memorias cuánticas con retención prolongada. En conjunto, estos avances ampliarán el conocimiento teórico sobre sistemas cuánticos abiertos y ofrecerán perspectivas aplicadas para el desarrollo de tecnologías cuánticas de próxima generación.
 
 
 
@@ -518,188 +517,24 @@ Finalmente, se explorará la aparición de memoria a largo plazo en sistemas de 
 
 \printbibliography[heading=none]
 
-\section{Calendario}
-
-
-
-
-
-\clearpage
-
-
-\section{Objetivos}
-
-El objetivo general de este proyecto es estudiar esquemas fuera de equilibrio en el modelo de Dicke abierto para explorar nuevas fases cuánticas y aplicaciones en el terreno de la información cuántica. 
-
-\begin{itemize}
-    \item Comprender el modelo de Dicke multimodo analizando las transiciones de fase superradiante, considerando el caso de 1 o 2 hasta $N$ emisores.
-    %%%
-    \item Estudiar el modelo de Dicke multimodo abierto y fuera de equilibrio utilizando el formalismo de Keldysh. 
-    %%%
-    \item Analizar como la competencia entre fluctuaciones cuánticas, disipación y bombeo afecta las propiedades del sistema a diferentes escalas de energía. 
-    %%%
-    \item Explorar aplicaciones como la posibilidad de cristales de tiempo en el modelo de Dicke multimodo en baños no markovianos, la presencia de memoria a largo plazo y el caso de interacciones entre emisores. 
-\end{itemize}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section{Calendario de actividades}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metodología y/o Desarrollo del Tema}
-%\textcolor{red}{[Aprox. 5 pp.]}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-En este proyecto, se abordará el estudio de sistemas cuánticos abiertos y fuera de equilibrio. Se iniciará con el modelo de Rabi~\cite{rabi1936}, empleando técnicas  de diagonalización numéricas~\cite{irish2007} y aproximaciones perturbativas, como la transformación del polarón y métodos variacionales~\cite{gonzalez2021}, para sentar las bases conceptuales. A continuación, se avanzará hacia el modelo de Rabi multimodo~\cite{peng2021}. Finalmente, se continuará al modelo de Dicke multimodo, permitiendo el estudio de transiciones de fase disipativas y fenómenos críticos en sistemas abiertos. 
-
-Para abordar el estudio de sistemas de interacción luz-materia en sistemas abiertos y fuera de equilibrio, se empleará la teoría de Keldysh. Esta metodología es particularmente adecuada para sistemas cuánticos con interacciones fuertes, donde coexisten dinámicas coherentes y disipativas~\cite{kamenev2023,rammer2011}. A diferencia de los métodos tradicionales basados en ecuaciones maestras, la teoría de Keldysh permite describir tanto la evolución unitaria como los efectos disipativos, facilitando el análisis de estados estacionarios no térmicos y transiciones de fase en sistemas complejos~\cite{Sieberer2016}.  La formulación de Keldysh extiende la teoría cuántica de campos (\textit{Quantum Field Theory} o QFT) a través de las integrales de camino en el contorno de Keldysh, para calcular funciones de correlación y respuesta en tiempo real, lo que es esencial para comprender la dinámica del sistema y su comportamiento crítico.
-
-Además, se integrará la teoría de renormalización funcional \textit{Functional Renormalization Group} o FRG), basada en la ecuación de Wetterich~\cite{wetterich1993}, para analizar la disipación a diferentes escalas de energía, especialmente en regímenes críticos o durante transiciones de fase. La FRG permitirá una descripción completa del sistema desde escalas microscópicas hasta macroscópicas, capturando efectos no perturbativos y estudiando la competencia entre coherencia y disipación~\cite{angelakis2007}. Esta aproximación será fundamental para investigar fenómenos como la relajación hacia estados estacionarios y la formación de nuevas fases no convencionales.
-
-En el estudio de sistemas cuánticos abiertos, la teoría de sistemas cuánticos disipativos proporciona un enfoque para describir la interacción entre un sistema y su entorno. Bajo la aproximación markoviana, donde se asume que la memoria del baño es despreciable, esta interacción puede modelarse mediante ecuaciones maestras de Lindblad~\cite{breuer2003,Lindblad1976}, las cuales describen la evolución temporal del sistema de manera efectiva. Este enfoque es esencial para comprender la dinámica de sistemas acoplados a baños markovianos, donde la disipación ocurre de manera instantánea y sin correlaciones temporales significativas~\cite{weiss2012}.
-
-Finalmente, se explorará la aparición de memoria a largo plazo en sistemas de Dicke acoplados a baños no markovianos~\cite{zhu2019,lundgren2020,fiorelli2020}. A diferencia de los baños markovianos, donde la disipación es instantánea, los baños no markovianos introducen correlaciones temporales que pueden alterar significativamente la dinámica del sistema~\cite{orazio2016}. Este enfoque permitirá estudiar cómo la memoria a largo plazo influye en la relajación del sistema y en la naturaleza de las transiciones de fase fuera de equilibrio~\cite{lundgren2020}. %En particular, se investigará la formación y estabilidad de cristales de tiempo, fases de la materia que rompen espontáneamente la simetría de traslación temporal, utilizando el modelo de Dicke multimodo como plataforma teórica~\cite{jager2024}.
-
-%Para abordar el estudio de sistemas cuánticos abiertos, fuera de equilibrio con interacciones fuertes con la posibilidad de realizar bombeos, la teoría de Keldysh se ha convertido en una herramienta importante~\cite{kamenev2023,rammer2011}. A diferencia de los métodos tradicionales basados en la formulación de ecuaciones maestras, la teoría de Keldysh proporciona un marco teórico para describir tanto la dinámica coherente como la disipativa en sistemas cuánticos fuera de equilibrio~\cite{Sieberer2016}. Esta teoría se basa en la formulación de integrales de camino en el contorno de Keldysh, que permite tratar de manera sistemática la evolución temporal de sistemas cuánticos abiertos, incluyendo efectos como la disipación.
-
-
-%La teoría de Keldysh es particularmente útil para estudiar sistemas con un gran número de grados de libertad, como los que aparecen en el Modelo de Dicke~\cite{torres2013,damanet2019}, donde se ha observado que al someter un bombeo externo con disipación se encuentran transiciones de fase fuera de equilibrio que difieren de las observadas en el modelo de Dicke cerrado~\cite{Sieberer2016}.
-%Estas transiciones están caracterizadas por exponentes críticos estáticos y dinámicos que reflejan la naturaleza térmica efectiva de las fluctuaciones de baja frecuencia, incluso en ausencia de un baño térmico externo~\cite{torres2013}. 
-%Por lo tanto, seria interesante  analizar propiedades críticas y transiciones de fase del modelo de Dicke multimodo abierto, disipativo y con desorden, por ejemplo, la relajación hacia estados estacionarios~\cite{buchhold2013}, el envejecimiento (aging)~\cite{lang2016}, y la formación de fase de no equilibrio~\cite{gilmore1978}. Estos fenómenos son de gran interés tanto desde el punto de vista teórico como experimental, ya que permiten estudiar cómo las fluctuaciones cuánticas y la disipación afectan la evolución temporal del sistema. 
-%En particular, se espera que el desorden induzca una dinámica lenta y una distribución amplia de tiempos de relajación, lo que puede llevar a comportamientos de envejecimiento similares a los observados en vidrios de espín clásicos~\cite{buchhold2013}. 
-%Además, la presencia de disipación, como la pérdida de fotones en la cavidad, puede modificar significativamente las propiedades espectrales y de correlación del sistema, llevando a la aparición de nuevas fases fuera de equilibrio.
-
-
-%Utilizando la formulación de Keldysh como marco teórico a sistemas abiertos no toma en cuenta la disipación a diferentes escalas de energía, complicando el análisis, especialmente en transiciones de fase o en regímenes críticos~\cite{Sieberer2016}. La teoría de renormalización funcional (FRG, por sus siglas en inglés) basada en la ecuación de Wetterich~\cite{wetterich1993,Sieberer2016}  proporciona una descripción completa del sistema, desde la escala microscópica hasta la macroscópica, capturando efectos no perturbativos y permitiendo el estudio de la competencia entre coherencia y disipación~\cite{angelakis2007,Sieberer2016}. En este contexto, utilizando FRG, nos permitira analizar las fluctuaciones cuánticas y la disipación a diferentes escalas de energía, especialmente en las transiciones de fase al modelo de Dicke multimodo. 
-
-
-%Por último, uno de los fenómenos de los sistemas de Dicke fuera de equilibrio es la aparición de memoria a largo plazo~\cite{zhu2019,lundgren2020,fiorelli2020}, un fenómeno que surge cuando el sistema está acoplado a baños no markovianos. A diferencia de los baños markovianos, donde la disipación es instantánea y no depende de la historia del sistema, los baños no markovianos introducen correlaciones temporales que pueden alterar drásticamente la dinámica del sistema~\cite{orazio2016}. Este tipo de memoria a largo plazo no solo afecta la relajación del sistema hacia un estado estacionario, sino que también puede influir en la naturaleza de las transiciones de fase~\cite{lundgren2020}. En particular, R. Lundgren en el 2020~\cite{lundgren2020} exploró cómo la interacción entre baños markovianos y no markovianos en sistemas de Dicke puede llevar a transiciones de fase clásicas fuera de equilibrio, donde los exponentes críticos dependen de la densidad espectral del baño no markoviano. Una de las transiciones de fase involucradas en sistemas de no equilibrio son los cristales de tiempo~\cite{zhu2019}. Los cristales de tiempo son fases de la materia que rompen espontáneamente la simetría de traslación temporal, exhibiendo un comportamiento periódico en el tiempo incluso en ausencia de un campo externo periódico~\cite{jager2024}. En particular, los sistemas de Dicke fuera de equilibrio representan una plataforma ideal para estudiar la formación y estabilidad de cristales de tiempo.
-
-%B. Zhu en el 2019~\cite{zhu2019}, investigo la estabilidad de los cristales de tiempo en el modelo de Dicke. En su trabajo, demuestran que el comportamiento de cristal de tiempo puede persistir incluso en presencia de interacciones de corto alcance que rompen la naturaleza colectiva del modelo de Dicke tradicional. Además,  identifican que la disipación juega un papel crucial en la estabilización de estos cristales de tiempo, actuando como un mecanismo de enfriamiento que contrarresta el calentamiento inducido por el bombeo periódico al sistema. En este contexto, uno de los objetivos de esta investigación es explorar la formación de cristales de tiempo en sistemas de Dicke multimodo fuera de equilibrio.
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Resultados Esperados}
-%\textcolor{red}{[Aprox. 2 pp.]}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Se espera que esta investigación aporte avances en la comprensión del modelo de Dicke multimodo en sistemas abiertos y fuera de equilibrio, enfocándose en fenómenos clave como las transiciones de fase superradiantes, la competencia entre modos y los efectos del desorden o interacciones entre emisores. En este análisis, se caracterizará cómo la disipación y la interacción entre modos influyen en las propiedades críticas y la coherencia cuántica del sistema. Los resultados incluirán la identificación de nuevas fases fuera de equilibrio utilizando el formalismo de Keldysh, y la exploración de aplicaciones, como la formación de cristales de tiempo y la implementación de memorias cuánticas con memoria a largo plazo. Estos avances no solo ampliarán el conocimiento teórico en sistemas cuánticos abiertos, sino que también permitirá la exploración de nuevas aplicaciones en el terreno de las tecnologías cuánticas.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Cronología}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-De acuerdo con el plan de estudios del  Posgrado en Ciencias (Física):
-
-\noindent El cronograma de la estancia está dividido en 12 trimestres. Dentro de cada trimestre, semanalmente, se entregarán avances del proyecto así como la aclaración de dudas y corrección de errores (en el caso que se presente). 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/Tabla Cronologia.png}
-
+    \includegraphics[width=1\linewidth]{Images/Calendario.png}
+    \label{Calendario}
 \end{figure}
 
-\begin{comment}
-\noindent\textbf{Trimestre I-III}:
-%%%
-\begin{itemize}
-    %%%
-    \item  Extensión del Modelo de Dicke a sistemas multimodos. 
-    %%%
-    \begin{itemize}
-        \item Estudiar el Modelo de Dicke, donde los átomos interactuan con múltiples modos fotónicos. 
-        %%%
-        \item Analizar las transiciones de fase superradiante y sus propiedades en sistemas multimodo. 
-        %%%
-    \end{itemize}
-    %%%
-    \item Efectos de desorden en el Modelo de Dicke. 
-    %%%
-    \begin{itemize}
-        \item Investigar como el desorden en acoplamientos átomo-fotón afecta las transiciones de fase superradiantes. 
-        %%% 
-    \end{itemize}
-\end{itemize}
-%%%
-\textbf{Trimestre IV-VI}:
-%%%
-\begin{itemize}
-    %%%
-    \item Extensión del Modelo de Dicke con disipación
-    %%%
-    \begin{itemize}
-        \item Estudiar el modelo de Dicke en presencia de disipación utilizando la teoría de Keldysh. 
-        %%%
-        \item Analizar como la disipación afecta las transiciones de fase superradiantes y sus propiedades
-        %%%
-     \end{itemize}
-    %%%
-    \item  Dinámica de sistemas fuera de equilibrio en el Modelo de Dicke
-    %%%
-    \begin{itemize}
-    %%%
-        \item Utilizar el formalismo de Keldysh para estudiar la dinámica de relajación con desorden y disipación 
-        %%%
-        \item Explorar como las fluctuaciones cuánticas afecta la evolución temporal del sistema 
-    \end{itemize}
-\end{itemize}
-%%%
-\textbf{Trimestre VII-IX}:
-\begin{itemize}
-%%%
-    \item Modelo de Dicke de dos fotones y Modelo de Rabi 
-    %%%
-    \begin{itemize}
-    %%%
-        \item Estudiar el Modelo de Dicke de dos fotones y Rabi en presencia de disipación. 
-        %%%
-        \item Analizar como la disipación afecta las transiciones de fase superradiantes y sus propiedades. 
-    \end{itemize}
-    %%%
-    \item Teoría de renormalización funcional para sistemas abiertos.
-    %%%
-    \begin{itemize}
-        \item Aplicar la teoría de renormalización funcional a sistemas abiertos. 
-        %%%
-        \item Estudiar como las fluctuaciones cuánticas y la disipación afectan las propiedades del sistema a diferentes escalas de energía. 
-    \end{itemize}
-\end{itemize}
-%%%
-\textbf{Trimestre X-XII}:
-%%%
-\begin{itemize} 
-    %%%
-    \item Aplicaciones en sistemas de Dicke fuera de equilibrio
-    %%%
-    \begin{itemize}
-        \item Estudiar la posibilidad de cristales de tiempo en sistemas de Dicke acoplados a baños no markovianos. 
-        %%%
-        \item Explorar como la memoria a largo plazo afecta a la formación de estos estados. 
-    \end{itemize}
-\end{itemize}
-
-\end{comment}
 
 
 
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Bibliografía}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

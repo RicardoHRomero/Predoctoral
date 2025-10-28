@@ -5,24 +5,18 @@
 \contentsline {subsection}{\numberline {1.3}Modelo de Rabi y Dicke abierto}{5}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Conclusión}{6}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Objetivos}{7}{section.2}%
-\contentsline {section}{\numberline {3}Metodología}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Modelo de Rabi de dos qubits con interacciones materiales}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Diagonalización numérica exacta}{7}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Aproximación adiabática}{8}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Aproximación de la onda rotante generalizada}{8}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Átomos gigantes en guías de onda de arreglo de cavidades}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Modelo básico y transformación de Fourier}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Función espectral y dinámica no markoviana}{9}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Transformada de Laplace y solución exacta}{9}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Extensión a átomos gigantes multimodo}{10}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Átomos Gigantes con modos multimodo}{11}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Modelo de Dicke multimodal con interacciones materiales}{11}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados Esperados}{11}{section.4}%
-\contentsline {section}{\numberline {5}Avances}{12}{section.5}%
-\contentsline {section}{\numberline {6}Bibliografía}{12}{section.6}%
-\contentsline {section}{\numberline {7}Calendario}{17}{section.7}%
-\contentsline {section}{\numberline {8}Objetivos}{18}{section.8}%
-\contentsline {section}{\numberline {9}Metodología y/o Desarrollo del Tema}{18}{section.9}%
-\contentsline {section}{\numberline {10}Resultados Esperados}{19}{section.10}%
-\contentsline {section}{\numberline {11}Cronología}{19}{section.11}%
-\contentsline {section}{\numberline {12}Bibliografía}{20}{section.12}%
+\contentsline {section}{\numberline {3}Metodología}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modelo de Rabi de dos qubits con interacciones materiales}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Diagonalización numérica exacta}{8}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Aproximación adiabática}{9}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Aproximación de la onda rotante generalizada}{9}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Átomos gigantes en guías de onda de arreglo de cavidades}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Modelo básico y transformada de Fourier}{10}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Función espectral}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Transformada de Laplace}{11}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Extensión a átomos gigantes}{11}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Conclusión }{12}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Resultados esperados}{12}{section.4}%
+\contentsline {section}{\numberline {5}Avances}{13}{section.5}%
+\contentsline {section}{\numberline {6}Bibliografía}{13}{section.6}%
+\contentsline {section}{\numberline {7}Calendario de actividades}{19}{section.7}%
