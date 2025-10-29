@@ -1,31 +1,31 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Modelos de interacción espín-bosón}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Sistemas abiertos y dinámica fuera del equilibrio}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Sistemas abiertos y dinámica fuera del equilibrio}{4}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Modelo de Rabi y Dicke abierto}{5}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Conclusión}{6}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Objetivos}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Objetivo general}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Objetivos específicos}{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Metodología}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Modelo de Rabi de dos qubits con interacciones materiales}{8}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Diagonalización numérica exacta}{8}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Aproximación adiabática}{9}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Aproximación de la onda rotante generalizada}{9}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Átomos gigantes en guías de onda de arreglo de cavidades}{10}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Modelo básico y transformada de Fourier}{10}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Función espectral}{10}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Transformada de Laplace}{11}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Extensión a átomos gigantes}{11}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Conclusión }{12}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Resultados esperados}{12}{section.4}%
-\contentsline {section}{\numberline {5}Avances}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Modelo de Rabi de dos qubits con interacciones materiales}{13}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Espectro energético y validación de la GRWA}{13}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Tratamiento variacional del estado fundamental}{14}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Valor medio del número de fotones}{16}{subsubsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.2}Reproducción analítica de dinámicas no markovianas en átomos gigantes}{17}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Caracterización de estados ligados y efectos de localización}{17}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Extensión a átomos gigantes y emergencia de BICs}{17}{subsubsection.5.2.2}%
-\contentsline {section}{\numberline {6}Bibliografía}{18}{section.6}%
-\contentsline {section}{\numberline {7}Calendario de actividades}{24}{section.7}%
+\contentsline {section}{\numberline {2}Objetivos}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Objetivo general}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Objetivos específicos}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Metodología}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modelo de Rabi de dos qubits con interacciones materiales}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Diagonalización numérica exacta}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Aproximación adiabática}{8}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Aproximación de la onda rotante generalizada}{8}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Átomos gigantes en guías de onda de arreglo de cavidades}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Modelo básico y transformada de Fourier}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Función espectral}{9}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Transformada de Laplace}{10}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Extensión a átomos gigantes}{10}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Conclusión }{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Resultados esperados}{11}{section.4}%
+\contentsline {section}{\numberline {5}Avances}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Modelo de Rabi de dos qubits con interacciones materiales}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Espectro energético y validación de la GRWA}{12}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Tratamiento variacional del estado fundamental}{12}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Valor medio del número de fotones}{14}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Reproducción analítica de dinámicas no markovianas en átomos gigantes}{15}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Caracterización de estados ligados y efectos de localización}{15}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Extensión a átomos gigantes y emergencia de BICs}{15}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Perspectivas inmediatas}{16}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Bibliografía}{16}{section.6}%
+\contentsline {section}{\numberline {7}Calendario de actividades}{20}{section.7}%
