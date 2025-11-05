@@ -181,7 +181,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
 En las últimas décadas, los sistemas de interacción spin-bosón se han convertido en un área central en la física~\cite{haroche2006}. El desarrollo de plataformas experimentales como cavidades y circuitos en electrodinámica cuántica (\textit{Quantum Electrodynamics} o QED)~\cite{Clerk2020}, sistemas de átomos fríos~\cite{Mekhov2012}, trampas ópticas~\cite{Yuanjie2021} o semiconductores acoplados a microcavidades~\cite{Schneider2018}, han permitido explorar el acoplamiento controlado entre excitaciones bosónicas (fotones) y sistemas discretos de dos niveles (qubits o átomos de espin $1/2$). 
 
 
@@ -190,6 +189,8 @@ En las últimas décadas, los sistemas de interacción spin-bosón se han conver
 Los sistemas abiertos y fuertemente acoplados, donde la interacción entre spin-bosón es comparable o mayor que las frecuencias propias del sistema— han cobrado relevancia experimental en los últimos años~\cite{Fazio2025}. La disipación y el bombeo pueden estabilizar coherencia colectiva, dando lugar a estados estacionarios fuera del equilibrio.~\cite{Sieberer2016,Halati2020}. El interés se centra, por tanto, en la competencia entre coherencia y disipación, lo que permite comprender y controlar el comportamiento colectivo en regímenes de acoplamiento intenso~\cite{Kirton2018}.
 
 Es en este marco conceptual donde modelos de spin-bosón como Rabi y Dicke adquieren relevancia, permitiendo analizar la dinámica de bombeo y disipación en estos sistemas~\cite{hwang2018,DiBello2024-2,Nagy10,Klinder15}. La propuesta de tesis doctoral se enmarca en esta dirección, con un enfoque sistemático y progresivo: comprender cómo la coherencia cuántica puede coexistir, competir o incluso emerger a partir de la disipación en sistemas de spin-bosón fuertemente acoplados. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,9 +204,12 @@ El estudio de la interacción entre la radiación y sistemas de dos niveles (esp
     \hat{H}_{\text{Rabi}} = \omega\hat{a}^{\dagger}\hat{a} + \frac{\omega_{0}}{2}\hat{\sigma}_{z} + g\left( \hat{\sigma}_{+} + \hat{\sigma}_{-} \right)\left( \hat{a}^{\dagger} + \hat{a} \right),
 \end{gather}
 
-describe la energía del campo (frecuencia $\omega$) y del átomo (frecuencia $\omega_{0}$). El parámetro $g$ caracteriza el acoplamiento entre ambos, mientras que los términos rotantes $(\hat{\sigma}_{-}\hat{a} + \hat{\sigma}_{+}\hat{a}^{\dagger})$ representan procesos que conservan el número de excitaciones: la emisión o absorción de un fotón acompañada de la desexcitación o excitación atómica. El modelo de Jaynes–Cummings~\cite{Jaynes1963} se obtiene aplicando la aproximación de onda rotante (\textit{Rotating Wave Aproximation} o RWA), que descarta los términos contra–rotantes $(\hat{\sigma}_{+}\hat{a}^{\dagger} + \hat{\sigma}_{-}\hat{a})$ válidos sólo en el régimen de acoplamiento débil $(g \ll \omega,\omega_{0})$. Esta aproximación permitió una descripción analítica del intercambio coherente de energía entre el átomo y el campo~\cite{wallraff2004}. Sin embargo, los avances experimentales han permitido acceder a los regímenes ultrastrong $(g/\omega \gtrsim 0.1)$ y deep strong $(g/\omega \gtrsim 1)$, donde la RWA deja de ser válida~\cite{FornDiaz2019}, y se requiere el modelo de Rabi completo.
+describe la energía del campo (frecuencia $\omega$) y del átomo (frecuencia $\omega_{0}$). El parámetro $g$ caracteriza el acoplamiento entre ambos, mientras que los términos rotantes $(\hat{\sigma}_{-}\hat{a} + \hat{\sigma}_{+}\hat{a}^{\dagger})$ representan procesos que conservan el número de excitaciones: la emisión o absorción de un fotón acompañada de la desexcitación o excitación atómica. El modelo de Jaynes–Cummings~\cite{Jaynes1963} se obtiene aplicando la aproximación de onda rotante (\textit{Rotating Wave Aproximation} o RWA), que descarta los términos contrarrotantes $(\hat{\sigma}_{+}\hat{a}^{\dagger} + \hat{\sigma}_{-}\hat{a})$ válidos sólo en el régimen de acoplamiento débil $(g \ll \omega,\omega_{0})$. Historicamente, esta aproximación permitió una descripción analítica del intercambio coherente de energía entre el átomo y el campo~\cite{wallraff2004}. Sin embargo, los avances experimentales han permitido acceder a los regímenes ultrafuerte (ultrastrong) $(g/\omega \gtrsim 0.1)$ y fuerte profundo (deep strong) $(g/\omega \gtrsim 1)$, donde la RWA deja de ser válida~\cite{FornDiaz2019}, y esto ha exigido el modelo de Rabi completo.
 
-Un paso natural para extender el modelo a sistemas multiqubit consiste en analizar el caso de dos qubits acoplados colectivamente a un modo del campo, descrito por:
+
+
+
+Un paso natural para extender el modelo a sistemas de muchas partículas (multiqubit) consiste en analizar el caso de dos qubits acoplados colectivamente a un modo del campo, descrito por:
 
 \begin{gather}
     \hat{H} = \omega\hat{a}^{\dagger}\hat{a} + \frac{\omega_{01}}{2}\hat{\sigma}_{z}^{1} + \frac{\omega_{02}}{2}\hat{\sigma}_{z}^{2} + \frac{g}{2}\left(\hat{\sigma}_{x}^{1}+\hat{\sigma}_{x}^{2}\right)(\hat{a}^{\dagger}+\hat{a}).
@@ -241,7 +245,7 @@ La inclusión de interacciones entre los átomos en el modelo de Dicke permite e
     \hat{H}_{\text{I}} = \omega\hat{a}^{\dagger}\hat{a} + \omega_{0}\hat{J}_{z} + \frac{\gamma}{\sqrt{N}}\left[ \hat{a}\hat{J}_{+} + \hat{a}^{\dagger}\hat{J}_{-} + \xi\left( \hat{a}\hat{J}_{-} + \hat{a}^{\dagger}\hat{J}_{+} \right)  \right] + \frac{1}{N}\sum_{i=x,y,z} \eta_{i}\hat{J}_{i}^{2}.
 \end{gather}
 
-Los términos rotantes $(\hat{a}\hat{J}_{+}, \hat{a}^{\dagger}\hat{J}_{-})$ y contra–rotantes $(\hat{a}\hat{J}_{-}, \hat{a}^{\dagger}\hat{J}_{+})$ son modulados por el parámetro anisotrópico $\xi$, mientras que los términos $\eta_{i}$ cuantifican la interacción entre emisores.
+Los términos rotantes $(\hat{a}\hat{J}_{+}, \hat{a}^{\dagger}\hat{J}_{-})$ y contrarrotantes $(\hat{a}\hat{J}_{-}, \hat{a}^{\dagger}\hat{J}_{+})$ son modulados por el parámetro anisotrópico $\xi$, mientras que los términos $\eta_{i}$ cuantifican la interacción entre emisores.
 
 Se han propuesto extensiones multimodo del modelo de Dicke~\cite{tolkunov2007}, donde múltiples modos del campo electromagnético interactúan con los átomos:
 
@@ -251,9 +255,7 @@ Se han propuesto extensiones multimodo del modelo de Dicke~\cite{tolkunov2007}, 
 
 Estos sistemas presentan fenómenos como competencia entre modos, fases no convencionales y efectos de desorden~\cite{rotondo2015}, con implicaciones en el almacenamiento cuántico y redes neuronales cuánticas~\cite{marsch2021}.
 
-De manera paralela, otro modelo físico conocido como “átomos gigantes” ha emergido como una extensión natural de estos modelos. En ellos, un solo átomo se acopla a un campo en múltiples puntos espaciales, generando retardos, interferencias y efectos no markovianos~\cite{gonzalez2021-2}. Su tamaño efectivo, comparable con la longitud de onda del campo, rompe la aproximación dipolar y permite fenómenos como estados ligados dentro y fuera del continuo (\textit{Bounds Inside Continuum} o BIC y  \textit{Bounds Outside Continuum} o BOC)~\cite{gonzalez2025}. Experimentalmente, estos sistemas se implementan en circuitos superconductores donde qubits tipo transmon se acoplan en múltiples puntos de una guía de onda~\cite{Kannan2020}.
-
-Los átomos gigantes constituyen un puente entre los modelos multiqubit y multimodo, donde la estructura espacial y temporal del acoplamiento genera nuevas dinámicas colectivas. Su estudio abre oportunidades para comprender, por ejemplo, efectos de memoria cuántica~\cite{fiorelli2020} y acoplamientos no markovianos~\cite{gonzalez2025}. 
+De manera paralela, otro modelo físico conocido como “átomos gigantes” ha emergido como una extensión natural de estos modelos. En ellos, un solo átomo se acopla a un campo en múltiples puntos espaciales, generando retardos, interferencias y efectos no markovianos~\cite{gonzalez2021-2}. Su tamaño efectivo, comparable con la longitud de onda del campo, rompe la aproximación dipolar y permite fenómenos como estados ligados dentro y fuera del continuo (\textit{Bounds Inside Continuum} o BIC y  \textit{Bounds Outside Continuum} o BOC)~\cite{gonzalez2025}. Experimentalmente, estos sistemas se implementan en circuitos superconductores donde qubits tipo transmon se acoplan en múltiples puntos de una guía de onda~\cite{Kannan2020}. Los átomos gigantes constituyen un puente entre los modelos multiqubit y multimodo, donde la estructura espacial y temporal del acoplamiento genera nuevas dinámicas colectivas. Su estudio abre oportunidades para comprender, por ejemplo, efectos de memoria cuántica~\cite{fiorelli2020} y acoplamientos no markovianos~\cite{gonzalez2025}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -266,7 +268,7 @@ La física de sistemas cuánticos abiertos proporciona un marco para describir s
 
 En estos sistemas, el intercambio de energía con el entorno puede ser de dos tipos: el bombeo coherente, que permite transferencia controlada de energía preservando coherencia cuántica, y el bombeo incoherente, de origen térmico o aleatorio, que introduce ruido~\cite{carmichael2013}. Esta dualidad permite estudiar cómo coherencia y disipación compiten o cooperan para generar dinámicas estacionarias fuera del equilibrio.
 
-La evolución temporal se describe mediante ecuaciones maestras para el operador densidad. La ecuación de Linblald incorpora sistemáticamente procesos de disipación y bombeo, llevando a estados estacionarios que no corresponden a estados térmicos, sino a configuraciones mantenidas por flujos continuos de energía~\cite{Fazio2025}. Complementariamente, el formalismo de Keldysh ofrece una formulación de campo fuera del equilibrio que unifica coherencia y disipación en un marco de acción efectiva~\cite{Sieberer2016,chakraborty2018}.
+La evolución temporal se describe mediante ecuaciones maestras para el operador densidad. La ecuación de Linblald incorpora sistemáticamente procesos de disipación y bombeo, llevando a estados estacionarios que no corresponden a estados térmicos, sino a configuraciones mantenidas por flujos continuos de energía~\cite{Fazio2025}. Complementariamente, el formalismo de Keldysh ofrece una formulación de campo fuera del equilibrio que unifica coherencia y disipación en un marco de acción efectiva en sistemas fuertemente interactuantes~\cite{Sieberer2016,chakraborty2018}.
 
 Estas herramientas teóricas han sido cruciales para describir la competencia entre coherencia y pérdida en plataformas experimentales como cavidades ópticas~\cite{torres2013}, circuitos superconductores~\cite{feigelman2000} y condensados de polaritones~\cite{dunnet2016}. 
 
@@ -284,7 +286,7 @@ La relevancia de este trabajo radica precisamente en proponer una ruta teórica 
 \end{comment}
 
 
-Los modelos de Rabi y Dicke permiten estudiar sistemas abiertos con disipación~\cite{Lyu2024,damanet2019}. En el modelo de Rabi abierto emerge una transición de fase disipativa de segundo orden, donde la competencia entre acoplamiento ultra-fuerte y disipación conduce a un estado estacionario con incremento significativo de excitaciones~\cite{hwang2018}.
+Los modelos de Rabi y Dicke permiten estudiar sistemas abiertos con disipación~\cite{Lyu2024,damanet2019}. Por ejemplo, en el modelo de Rabi abierto emerge una transición de fase disipativa de segundo orden, donde la competencia entre acoplamiento ultra-fuerte y disipación conduce a un estado estacionario con incremento significativo de excitaciones~\cite{hwang2018}.
 
 El modelo de Dicke abierto incorpora explícitamente disipación (pérdida de fotones y relajación atómica) y bombeo externo, dando lugar a transiciones de fase dinámicas~\cite{kirton2017,LeBoite2020} como oscilaciones coherentes sostenidas~\cite{mivehvar2021} y cristales de tiempo~\cite{zhu2019}.
 
@@ -315,17 +317,15 @@ Recientemente, el modelo de Dicke multimodo en regímenes fuera de equilibrio ha
 
 \subsection{Objetivo general}
 
-El objetivo central de esta investigación doctoral es establecer un marco teórico para comprender la dinámica colectiva en sistemas cuánticos abiertos con interacción luz-materia en regímenes de acoplamiento intenso, multimodo y multiqubit. Buscamos describir cómo la competencia entre coherencia, disipación y bombeo externo genera nuevas fenómenos fuera del equilibrio.
+El objetivo central de esta investigación doctoral es establecer un marco teórico para comprender la dinámica colectiva en sistemas cuánticos abiertos con interacción luz-materia en regímenes de acoplamiento ultrafuerte, multimodo y multiqubit. Buscamos describir cómo la competencia entre coherencia, disipación y bombeo externo genera nuevas fenómenos fuera del equilibrio.
 
 Este objetivo se aborda progresivamente, comenzando con el modelo de Rabi de dos qubits, pasando por átomos gigantes hasta el modelo de Dicke abierto y multimodo. 
 
-\subsection{Objetivos específicos}
-
 \begin{itemize}
-    \item Calcular el espectro energético del modelo de Rabi de dos qubits con interacciones materiales, mediante diagonalización exacta y aproximaciones analíticas (adiabática y GRWA), evaluando cómo los parámetros $\eta_x$ y $\eta_z$ modifican los niveles y las correlaciones luz–materia.
+    \item Calcular el espectro energético del modelo de Rabi con uno y dos qubits con interacciones materiales, mediante diagonalización exacta y aproximaciones analíticas (adiabática y GRWA), evaluando cómo los parámetros $\eta_x$ y $\eta_z$ modifican los niveles y las correlaciones luz–materia.
     \item Caracterizar la dinámica no markoviana en configuraciones de átomos gigantes acoplados a guías de onda, determinando los retardos temporales y la formación de estados ligados fotónicos mediante la transformada de Laplace.
     \item Formular el modelo de Rabi abierto dentro del marco de la ecuación maestra de Lindblad, identificando regímenes estacionarios y condiciones para la aparición de transiciones disipativas.
-    \item Extender el análisis al modelo de Dicke multiqubit, investigando cómo las interacciones entre emisores alteran la transición superradiante fuera y dentro del equilibrio.
+    \item Extender los análisis anteriores al modelo de Dicke multiqubit, investigando cómo las interacciones entre emisores alteran la transición superradiante fuera y dentro del equilibrio.
     \item Desarrollar el formalismo de Keldysh para el modelo de Dicke multimodo, analizando la competencia entre múltiples modos bosónicos, el bombeo incoherente y la disipación.
     \item Integrar el enfoque de renormalización funcional (FRG) para explorar la escala energética de la disipación y la emergencia de fases cuánticas fuera del equilibrio.
 \end{itemize}
@@ -341,7 +341,7 @@ Este objetivo se aborda progresivamente, comenzando con el modelo de Rabi de dos
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Esta sección presenta el marco metodológico para abordar los primeros objetivos de esta propuesta doctoral. El planteamiento se estructura en dos partes:  el estudio del modelo de Rabi extendido a dos qubits con interacciones materiales, como primer acercamiento a sistemas multiqubit; y el análisis de átomos gigantes en guías de onda estructuradas, que permiten explorar fenómenos multimodales bosónicos y efectos no markovianos. 
+En esta sección se presentan las herramientas teóricas para abordar los primeros objetivos de esta propuesta doctoral. El planteamiento se estructura en dos partes:  el estudio del modelo de Rabi extendido a dos qubits con interacciones materiales, como primer acercamiento a sistemas multiqubit; y el análisis de átomos gigantes en guías de onda estructuradas, que permiten explorar fenómenos multimodales bosónicos y efectos no markovianos. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -380,7 +380,7 @@ En la base producto $|\Psi\rangle = |n\rangle \otimes |j, m\rangle$ con $j=1$ y 
 
 Como primera aproximación analítica, consideramos el límite adiabático ($\omega_0 \rightarrow 0$), donde el oscilador se ajusta instantáneamente a la configuración de los qubits~\cite{irish2005}. Esta aproximación corresponde físicamente al régimen donde la frecuencia del oscilador domina sobre el desacople de los qubits.
 
-La transformación $\hat{U} = \exp\left[{\beta(\hat{a}^{\dagger}-\hat{a})}\right]$ genera estados de Fock desplazados que describen el reacomodo del campo para cada configuración de qubits. Físicamente, podemos visualizar esto como si el campo electromagnético se ''adaptara'' instantáneamente a la orientación de los espines, creando pozos de potencial efectivos que dependen del estado de los qubits.
+La transformación $\hat{U} = \exp\left[{\beta(\hat{a}^{\dagger}-\hat{a})}\right]$ genera estados de Fock desplazados que describen el reacomodo del campo para cada configuración de qubits. Físicamente, podemos visualizar esto como si el campo electromagnético se ``adaptara'' instantáneamente a la orientación de los espines, creando pozos de potencial efectivos que dependen del estado de los qubits.
 
 Esta aproximación conserva únicamente acoplamientos entre estados con el mismo número de excitaciones, resultando en un Hamiltoniano efectivo con estructura de bloques diagonales. Si bien proporciona una imagen física intuitiva y captura correctamente el estado base, su limitación principal reside en ignorar completamente los efectos de tunelado cuántico ($\omega_0 \neq 0$), lo que lleva a discrepancias significativas en el espectro de excitaciones.
 
@@ -388,7 +388,7 @@ Esta aproximación conserva únicamente acoplamientos entre estados con el mismo
 \subsubsection{Aproximación de la onda rotante generalizada}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-La Aproximación Generalizada de Onda Rotante (\text{Generalized Rotating Wave Approximation} o GRWA)~\cite{irish2007,albert2011,yu2012,zhang2015,zhangyu2016,zhangyu2017}  extiende el enfoque adiabático reintroduciendo consistentemente el tunelado cuántico mediante una transformación polarónica:
+La Aproximación Generalizada de Onda Rotante (\textit{Generalized Rotating Wave Approximation} o GRWA)~\cite{irish2007,albert2011,yu2012,zhang2015,zhangyu2016,zhangyu2017}  extiende el enfoque adiabático reintroduciendo consistentemente el tunelado cuántico mediante una transformación polarónica:
 
 \begin{gather}\label{transformation beta}
     \hat{U} = \exp\left[ \beta\hat{J}_{x}(\hat{a}^{\dagger} - \hat{a}) \right],
@@ -396,9 +396,7 @@ La Aproximación Generalizada de Onda Rotante (\text{Generalized Rotating Wave A
 
 con $\beta = g/\omega$. Físicamente, esta transformación representa un desplazamiento colectivo del campo electromagnético que incorpora de manera autoconsistente la retroalimentación entre los qubits y el oscilador.
 
-La GRWA  preserva la estructura de bloques manejable de la aproximación adiabática mientras incluye correcciones esenciales que permiten describir transiciones entre diferentes números de excitaciones. Matemáticamente, esto se logra mediante la resolución de un problema de valores propios en cada bloque del Hamiltoniano transformado, donde ahora se retienen acoplamientos  que la aproximación adiabática descartaba.
-
-Esta metodología progresiva —desde la aproximación adiabática  hasta la GRWA, validadas sistemáticamente contra resultados numéricos exactos— establece las bases conceptuales y técnicas para extender nuestro análisis a sistemas multiqubit más complejos.
+La GRWA  preserva la estructura de bloques manejable de la aproximación adiabática mientras incluye correcciones esenciales que permiten describir transiciones entre diferentes números de excitaciones. Matemáticamente, esto se logra mediante la resolución de un problema de valores propios en cada bloque del Hamiltoniano transformado, donde ahora se retienen acoplamientos  que la aproximación adiabática descartaba. Esta metodología progresiva —desde la aproximación adiabática  hasta la GRWA, validadas sistemáticamente contra resultados numéricos exactos— establece las bases conceptuales y técnicas para extender nuestro análisis a sistemas multiqubit más complejos.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -417,9 +415,7 @@ El punto de partida es un emisor de dos niveles acoplado a un arreglo unidimensi
 
 \[H = \delta\sigma^{+}\sigma^{-} + \omega_{0}\sum_{n}a^{\dagger}_{n}a_{n} + \xi\sum_{n}\left(a^{\dagger}_{n+1}a_{n} + a^{\dagger}_{n}a_{n+1}\right) + g_{0}\left(\sigma^{+}a_{0} + \sigma^{-}a^{\dagger}_{0}\right).\]
 
-La estrategia de solución aprovecha la invariancia traslacional del sistema mediante la transformación de Fourier discreta $a_{k} = N^{-1/2}\sum_{n}e^{ikn}a_{n}$. Esta transformación  diagonaliza la guía de onda, revelando la relación de dispersión $\omega_{k} = 2\xi\cos k$ que describe cómo se propagan los fotones a través del arreglo.
-
-Físicamente, este cambio de perspectiva de cavidades localizadas a modos extendidos nos permite pensar en fotones saltando entre cavidades vecinas, trabajamos con modos colectivos que se propagan como ondas a lo largo de la guía. Esta representación nos permite describir procesos de emisión espontánea, donde un átomo excitado emite radiación que se propaga lejos del punto de emisión.
+La estrategia de solución aprovecha la invariancia traslacional del sistema mediante la transformación de Fourier discreta $a_{k} = N^{-1/2}\sum_{n}e^{ikn}a_{n}$. Esta transformación  diagonaliza la guía de onda, revelando la relación de dispersión $\omega_{k} = 2\xi\cos k$ que describe cómo se propagan los fotones a través del arreglo. Físicamente, este cambio de perspectiva de cavidades localizadas a modos extendidos nos permite pensar en fotones saltando entre cavidades vecinas, trabajamos con modos colectivos que se propagan como ondas a lo largo de la guía. Esta representación nos permite describir procesos de emisión espontánea, donde un átomo excitado emite radiación que se propaga lejos del punto de emisión.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Función espectral}
@@ -495,7 +491,7 @@ Los resultados aportarán una comprensión integral de los fenómenos fuera del 
 
 En una primera etapa, se abordará el estudio del modelo de Rabi con dos qubits acoplados y con interacciones materiales. El objetivo es caracterizar cómo la presencia de interacciones materiales entre qubits modifica el espectro energético del sistema. Se espera identificar patrones que puedan extenderse posteriormente a sistemas con mayor número de qubits. Para ello, se utilizarán distintas aproximaciones, desde métodos adiabáticos hasta la GRWA, comparándolas con resultados numéricos exactos.
 
-En la línea de investigación sobre átomos gigantes, se extenderá el modelo hacia regímenes de acoplamiento fuerte, donde la interacción entre los emisores y el campo no puede tratarse como una perturbación débil. En estos sistemas, los estados excitados pueden formar \textit{estados ligados} dentro o fuera del continuo fotónico, lo que significa que el fotón puede quedar parcialmente confinado alrededor del átomo. La extensión espacial del emisor permite aprovechar efectos de interferencia para atrapar fotones en regiones específicas del espacio, generando cavidades ópticas ''virtuales''. 
+En la línea de investigación sobre átomos gigantes, se extenderá el modelo hacia regímenes de acoplamiento fuerte, donde la interacción entre los emisores y el campo no puede tratarse como una perturbación débil. En estos sistemas, los estados excitados pueden formar \textit{estados ligados} dentro o fuera del continuo fotónico, lo que significa que el fotón puede quedar parcialmente confinado alrededor del átomo. La extensión espacial del emisor permite aprovechar efectos de interferencia para atrapar fotones en regiones específicas del espacio, generando cavidades ópticas ``virtuales''. 
 
 Para describir la dinámica fuera del equilibrio en sistemas abiertos con interacciones fuertes, se empleará la teoría de Keldysh. Este formalismo extiende la teoría cuántica de campos (\textit{Quantum Field Theory}, QFT) al dominio del tiempo real mediante integrales de camino definidas sobre un contorno de Keldysh~\cite{kamenev2023}. A diferencia de los métodos tradicionales basados en ecuaciones maestras, la formulación de Keldysh permite tratar simultáneamente procesos coherentes (unitarios) y disipativos, capturando la evolución completa del sistema. Esto es especialmente útil para describir estados estacionarios no térmicos y analizar transiciones de fase en presencia de disipación y bombeo externo~\cite{Sieberer2016}.
 
@@ -521,7 +517,7 @@ Se espera que los resultados de esta investigación contribuyan al entendimiento
 \subsection{Modelo de Rabi de dos qubits con interacciones materiales}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Mostramos algunos resultados del espectro de energías del modelo de Rabi de dos qubits con interacciones materiales utilizando la aproximación adiabática y GRWA. 
+Mostramos algunos resultados del espectro de energías del modelo de Rabi de dos qubits con interacciones materiales utilizando la aproximación adiabática y la GRWA. 
 
 \subsubsection{Espectro energético y validación de la GRWA}
 
@@ -530,7 +526,7 @@ La validación sistemática de nuestras aproximaciones mediante diagonalización
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\linewidth]{Images APS v1/GRWA.pdf}
-    \caption{Espectro energético del modelo de Rabi de dos qubits. Las líneas negras sólidas representan la diagonalización numérica exacta. (a) Caso no resonante $\omega_0 = \omega/2$; (b) Caso resonante $\omega = \omega_0$; (c) Resonante con $\eta_z = 0.5$; (d) Resonante con $\eta_x = 0.5$. La GRWA (línea púrpura discontinua) muestra excelente acuerdo con los resultados exactos incluso en presencia de interacciones materiales.}
+    \caption{\footnotesize{Espectro energético del modelo de Rabi de dos qubits. Las líneas negras sólidas representan la diagonalización numérica exacta. (a) Caso no resonante $\omega_0 = \omega/2$; (b) Caso resonante $\omega = \omega_0$; (c) Resonante con $\eta_z = 0.5$; (d) Resonante con $\eta_x = 0.5$. La GRWA (línea púrpura discontinua) muestra excelente acuerdo con los resultados exactos incluso en presencia de interacciones materiales.}}
     \label{fig: Conventional GRWA}
 \end{figure}
 
@@ -555,7 +551,7 @@ Como evidencia la Figura~\ref{fig:Ground State}, este tratamiento variacional (l
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\linewidth]{Images APS v1/Estado Base.pdf}
-    \caption{Energía del estado fundamental. El tratamiento variacional con $\beta$ (azul sólido) y $\beta + \lambda$ (verde sólido) muestra mejora sistemática sobre aproximaciones convencionales en todos los regímenes de acoplamiento.}
+    \caption{\footnotesize{Energía del estado fundamental. El tratamiento variacional con $\beta$ (azul sólido) y $\beta + \lambda$ (verde sólido) muestra mejora sistemática sobre aproximaciones convencionales en todos los regímenes de acoplamiento.}}
     \label{fig:Ground State}
 \end{figure}
 
@@ -565,7 +561,7 @@ Para capturar correlaciones cuánticas adicionales, implementamos una transforma
 E_{\text{GRWA,GS}}^{\beta,\lambda} = \omega \sinh^{2}(2\lambda) - \omega_{0} e^{-\frac{\beta^{2}}{2} e^{-4\lambda}} + \frac{1}{2}\left[ (\omega\beta -2g)\beta + \eta_{x} + \frac{\eta_{z}}{2}\left( e^{-2\beta^{2}e^{-4\lambda}} +3 \right) \right].
 \end{gather}
 
-La optimización simultánea de ambos parámetros ($\partial E/\partial\beta = 0$, $\partial E/\partial\lambda = 0$) proporciona la descripción más precisa del estado fundamental. En el límite de acoplamiento débil, los parámetros admiten formas analíticas compactas:
+La optimización simultánea de ambos parámetros ($\partial E/\partial\beta = 0$, $\partial E/\partial\lambda = 0$) proporciona la descripción más precisa del estado base. En el límite de acoplamiento débil, los parámetros admiten formas analíticas compactas:
 
 \begin{gather}
 \beta_{0} \simeq \frac{g}{\omega + \omega_{0}-\eta_{z}}, \qquad \lambda_{0} \simeq \frac{\omega_{0}-\eta_{z}}{2\omega} \left( \frac{g}{\omega + \omega_{0} -\eta_{z}} \right)^{2},
@@ -580,11 +576,11 @@ El cálculo del número medio de fotones $\langle n \rangle = \langle a^{\dagger
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Images APS v1/Promedio.pdf}
-    \caption{Número medio de fotones en el estado fundamental. La GRWA captura el dressing fotónico inducido por el acoplamiento fuerte y la influencia diferenciada de las interacciones materiales.}
+    \caption{\footnotesize{Número medio de fotones en el estado fundamental. La GRWA captura el dressing fotónico inducido por el acoplamiento fuerte y la influencia diferenciada de las interacciones materiales.}}
     \label{fig:Expectation Value}
 \end{figure}
 
-Observamos que $\eta_z$ acopla directamente con $\hat{J}_{z}$ y modifica significativamente el desplazamiento del oscilador, $\eta_x$ (asociado a procesos spin-flip) influye principalmente en la estructura del entrelazamiento y el espectro de excitaciones, sin afectar prominentemente el desplazamiento medio del campo. Esta distinción física emerge naturalmente de nuestro tratamiento variacional y constituye un insight valioso para el diseño de sistemas cuánticos con acoplamientos controlados.
+Observamos que $\eta_z$ acopla directamente con $\hat{J}_{z}$ y modifica significativamente el desplazamiento del oscilador, $\eta_x$ (asociado a procesos spin-flip) influye principalmente en la estructura del entrelazamiento y el espectro de excitaciones, sin afectar prominentemente el desplazamiento medio del campo. Esta distinción física emerge naturalmente de nuestro tratamiento variacional y constituye una pista valiosa para el diseño de sistemas cuánticos con acoplamientos controlados.
 
 
 
